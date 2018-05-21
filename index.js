@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    client.user.setActivity('https://git.io/d.js-heroku', {type: 'WATCHING'});
+    client.user.setActivity('Wikipedia', {type: 'WATCHING'});
 });
 
 client.on('message', message => {
@@ -16,6 +16,9 @@ client.on('message', message => {
     if (message.content === 'ping') {
         // send back "Pong." to the channel the message was sent in
         message.channel.send('Pong.');
+    }
+    else if (message.content === 'hello') {
+        message.channel.send('Hi!');
     }
 });
 
