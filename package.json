@@ -1,0 +1,31 @@
+{
+  "name": "murmuring-mountain",
+  "version": "1.0.0",
+  "description": "A random essay generator based on a given topic.",
+  "main": "index.js",
+  "engines": {
+    "node": "8.x",
+    "npm": "5.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonpup/murmuring-mountain.git"
+  },
+  "keywords": [
+    "heroku",
+    "discord.js"
+  ],
+  "author": "Anton Pupkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonpup/murmuring-mountain/issues"
+  },
+  "homepage": "https://github.com/antonpup/murmuring-mountain#readme",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
