@@ -6,13 +6,11 @@ const Paper = require('./paper.js');
 
 let knowledge = new Knowledge();
 
-
-
 client.on('ready', () => {
     client.user.setActivity('Wikipedia', {type: 'WATCHING'});
 });
 
-client.on('message', message => {
+client.on('message', async message => {
     if (!message.content.startsWith(process.env.PREFIX) || !message.guild)
     {
         return;
@@ -36,10 +34,10 @@ client.on('message', message => {
     }
     else
     {
-        let paper = new Paper(1, 500, knowledge, command);
+        let paper = new Paper(0, 50, knowledge, command);
 
         //message.channel.send('Chosen topic was ' + command);
-        message.channel.send(paper.writePaper());
+        return message.channel.send(paper.writePaper());
     }
 });
 

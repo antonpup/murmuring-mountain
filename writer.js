@@ -11,18 +11,18 @@ class Writer {
     
     write(wordCount)
     {
-        let composition = "";
-        let sentence = "";
+        var composition = "";
+        var sentence = "";
         
         for(var i = 0; i < wordCount;)
         {
-            switch(getRandomInt(2))
+            switch(this.getRandomInt(2))
             {
                 case 0:
-                    sentence = simple();
+                    sentence = this.simple();
                     break;
                 case 1:
-                    sentence = simpleplusplus();
+                    sentence = this.simpleplusplus();
                     break;
                 case 2:
                     //Compound Sentence
@@ -31,26 +31,26 @@ class Writer {
                     //Quote
                     break;
                 default:
-                    sentence = simple();
+                    sentence = this.simple();
                     break;
             }
             
             composition += sentence + " ";
             
-            i += sentence.split("\\s").length;
+            i += sentence.split(" ").length;
         }
         
         return composition;
     }
     
-    write(wordCount, type)
+    writeType(wordCount, type)
     {
         if(null == type || type.length === 0)
         {
             return write(wordCount);
         }
         
-        let composition = "";
+        var composition = "";
         
         switch(type.toLowerCase())
         {
@@ -77,18 +77,18 @@ class Writer {
     
     simple()
     {
-        let ret_sentence = "";
+        var ret_sentence = "";
         ret_sentence += this.vocabulary.getRandomArticle() + " ";
 
         if (ret_sentence.startsWith("A") || ret_sentence.startsWith("One"))
         {
             
             ret_sentence += ( (this.research.getRandomTopicNoun() == null) ? this.vocabulary.getRandomNoun() : this.research.getRandomTopicNoun() ) + " ";
-            ret_sentence += pluralize(this.vocabulary.getRandomVerb());
+            ret_sentence += this.pluralize(this.vocabulary.getRandomVerb());
         }
         else
         {
-            ret_sentence += pluralize( (this.research.getRandomTopicNoun() == null) ? this.vocabulary.getRandomNoun() : this.research.getRandomTopicNoun() ) + " ";
+            ret_sentence += this.pluralize( (this.research.getRandomTopicNoun() == null) ? this.vocabulary.getRandomNoun() : this.research.getRandomTopicNoun() ) + " ";
             ret_sentence += this.vocabulary.getRandomVerb();
         }
 
@@ -97,46 +97,46 @@ class Writer {
     
     simpleplusplus()
     {
-        let ret_sentence = "";
+        var ret_sentence = "";
 
-        if (getRandomInt(10) > 3)
+        if (this.getRandomInt(10) > 3)
         {
             ret_sentence += this.vocabulary.getRandomArticle() + " ";
         }
 
         if (ret_sentence.startsWith("A") || ret_sentence.startsWith("One"))
         {
-            if (getRandomInt(10) > 5)
+            if (this.getRandomInt(10) > 5)
             {
                 ret_sentence += this.vocabulary.getRandomAdjective() + " ";
             }
 
-            if(getRandomInt(10) > 8)
+            if(this.getRandomInt(10) > 8)
             {
                 ret_sentence += ( (this.research.getRandomTopicName() == null) ? this.vocabulary.getRandomName() : this.research.getRandomTopicName() ) + " ";
             }
             else
             {
                 ret_sentence += ( (this.research.getRandomTopicNoun() == null) ? this.vocabulary.getRandomNoun() : this.research.getRandomTopicNoun() ) + " ";
-                ret_sentence += pluralize(this.vocabulary.getRandomVerb());
+                ret_sentence += this.pluralize(this.vocabulary.getRandomVerb());
             }
 
-            if (getRandomInt(10) > 5)
+            if (this.getRandomInt(10) > 5)
             {
                 ret_sentence += " " + this.vocabulary.getRandomAdverb();
             }
         }
         else
         {
-            if (getRandomInt(10) > 3)
+            if (this.getRandomInt(10) > 3)
             {
                 ret_sentence += this.vocabulary.getRandomAdjective() + " ";
             }
 
-            ret_sentence += pluralize( (this.research.getRandomTopicName() == null) ? this.vocabulary.getRandomNoun() : this.research.getRandomTopicName() ) + " ";
+            ret_sentence += this.pluralize( (this.research.getRandomTopicName() == null) ? this.vocabulary.getRandomNoun() : this.research.getRandomTopicName() ) + " ";
             ret_sentence += this.vocabulary.getRandomVerb();
 
-            if (getRandomInt(10) > 5)
+            if (this.getRandomInt(10) > 5)
             {
                 ret_sentence += " " + this.vocabulary.getRandomAdverb();
             }

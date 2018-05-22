@@ -13,15 +13,15 @@ class Knowledge {
         this.nonNouns = [];
         
         // Populate the lists
-        this.verbs = this.verbs.concat(filestream.readFileSync("./Knowledge/verbList.txt", 'utf-8').split("\n"));
-        this.nouns = this.nouns.concat(filestream.readFileSync("./Knowledge/nounList.txt", 'utf-8').split("\n"));
-        this.names = this.names.concat(filestream.readFileSync("./Knowledge/nameList.txt", 'utf-8').split("\n"));
-        this.adverbs = this.adverbs.concat(filestream.readFileSync("./Knowledge/adverbList.txt", 'utf-8').split("\n"));
-        this.adjectives = this.adjectives.concat(filestream.readFileSync("./Knowledge/adjectiveList.txt", 'utf-8').split("\n"));
-        this.articles = this.articles.concat(filestream.readFileSync("./Knowledge/articleList.txt", 'utf-8').split("\n"));
-        this.nouns = this.nouns.concat(filestream.readFileSync("./Knowledge/pronounList.txt", 'utf-8').split("\n"));
-        this.prepositions = this.prepositions.concat(filestream.readFileSync("./Knowledge/prepositionList.txt", 'utf-8').split("\n"));
-        this.nonNouns = this.nonNouns.concat(filestream.readFileSync("./Knowledge/nonNounList.txt", 'utf-8').split("\n"));
+        this.verbs = this.verbs.concat(filestream.readFileSync("./Knowledge/verbList.txt", 'utf-8').split("\r\n"));
+        this.nouns = this.nouns.concat(filestream.readFileSync("./Knowledge/nounList.txt", 'utf-8').split("\r\n"));
+        this.names = this.names.concat(filestream.readFileSync("./Knowledge/nameList.txt", 'utf-8').split("\r\n"));
+        this.adverbs = this.adverbs.concat(filestream.readFileSync("./Knowledge/adverbList.txt", 'utf-8').split("\r\n"));
+        this.adjectives = this.adjectives.concat(filestream.readFileSync("./Knowledge/adjectiveList.txt", 'utf-8').split("\r\n"));
+        this.articles = this.articles.concat(filestream.readFileSync("./Knowledge/articleList.txt", 'utf-8').split("\r\n"));
+        this.nouns = this.nouns.concat(filestream.readFileSync("./Knowledge/pronounList.txt", 'utf-8').split("\r\n"));
+        this.prepositions = this.prepositions.concat(filestream.readFileSync("./Knowledge/prepositionList.txt", 'utf-8').split("\r\n"));
+        this.nonNouns = this.nonNouns.concat(filestream.readFileSync("./Knowledge/nonNounList.txt", 'utf-8').split("\r\n"));
     }
     
     getRandomInt(max)
@@ -41,7 +41,7 @@ class Knowledge {
     
     getRandomVerb()
     {
-        return this.verbs[getRandomInt(this.verbs.length)];
+        return this.verbs[this.getRandomInt(this.verbs.length)];
     }
     
     getNouns()
@@ -51,7 +51,7 @@ class Knowledge {
     
     getRandomNoun()
     {
-        return this.nouns[getRandomInt(this.nouns.length)];
+        return this.nouns[this.getRandomInt(this.nouns.length)];
     }
     
     getNames()
@@ -61,7 +61,7 @@ class Knowledge {
     
     getRandomName()
     {
-        return this.names[getRandomInt(this.names.length)];
+        return this.names[this.getRandomInt(this.names.length)];
     }
     
     getAdjectives()
@@ -71,7 +71,7 @@ class Knowledge {
     
     getRandomAdjective()
     {
-        return this.adjectives[getRandomInt(this.adjectives.length)];
+        return this.adjectives[this.getRandomInt(this.adjectives.length)];
     }
     
     getAdverbs()
@@ -81,7 +81,7 @@ class Knowledge {
     
     getRandomAdverb()
     {
-        return this.adverbs[getRandomInt(this.adverbs.length)];
+        return this.adverbs[this.getRandomInt(this.adverbs.length)];
     }
     
     getPrepositions()
@@ -91,7 +91,7 @@ class Knowledge {
     
     getRandomPreposition()
     {
-        return this.prepositions[getRandomInt(this.prepositions.length)];
+        return this.prepositions[this.getRandomInt(this.prepositions.length)];
     }
     
     getArticles()
@@ -101,7 +101,7 @@ class Knowledge {
     
     getRandomArticle()
     {
-        return this.articles[getRandomInt(this.articles.length)];
+        return this.articles[this.getRandomInt(this.articles.length)];
     }
     
     getNonNouns()

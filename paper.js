@@ -1,6 +1,5 @@
-const writer = require('./writer.js');
-const researcher = require('./researcher.js');
-
+const Writer = require('./writer.js');
+const Researcher = require('./researcher.js');
 
 class Paper {
     constructor(paragraphs, wordcount, vocabulary, topic) {
@@ -10,7 +9,7 @@ class Paper {
         this.topic = topic;
         this.research = new Researcher(topic);
         this.research.sortWiki(this.vocabulary);
-        this.writer = new Knowledge(new Researcher(topic), this.vocabulary);
+        this.writer = new Writer(this.research, this.vocabulary);
     }
 
     writePaper()
@@ -20,13 +19,13 @@ class Paper {
         if(this.paragraphs === 0)
         {
             //just write one paragraph
-            composition += "\t" + this.writer.write(this.wordCount);
+            composition += this.writer.write(this.wordcount);
         }
         else
         {
             for(let para = 0; para < this.paragraphs; para++)
             {
-                composition += "\t" + this.writer.write(this.wordCount / this.paragraphs) + "\r\n";
+                composition += "\t" + this.writer.write(this.wordcount / this.paragraphs) + "\r\n";
             }
         }
 

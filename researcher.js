@@ -1,4 +1,4 @@
-var http = require('http');
+var request = require("request")
 
 class Researcher {
     constructor(topic) {
@@ -6,79 +6,35 @@ class Researcher {
         this.words = [];
         this.topicNouns = [];
         this.topicNames = [];
+
+        var url = "https://en.wikipedia.org/w/api.php?format=json&continue=&action=query&prop=extracts&exsectionformat=plain&exintro=&explaintext=&titles=" + encodeURIComponent(topic.replace(/ /g, '_'));
         
-        getData(topic);
-    }
-    
-    getData(topic)
-    {
-        var http = require('http');
-        var str = '';
+        var self = this;
+        
+        this.isInited = false;
+        
+        request({
+            url: url,
+            json: true
+        }, function (error, response, body) {
 
-        var options = {
-            host: 'en.wikipedia.org',
-            path: 'w/api.php?format=xml&continue=&action=query&prop=extracts&exsectionformat=plain&exintro=&explaintext=&titles=' + encodeURIComponent(topic.replace(/ /g, '_'))
-        };
+            if (!error && response.statusCode === 200) {
+                var wikiSample = Object.entries(body.query.pages)[0][1].extract;
+                var sentences = wikiSample.replace(/,|;|\n|'/g, '').split(". ");
 
-        callback = function(response) {
-
-            response.on('data', function (chunk) {
-                str += chunk;
-            });
-
-            response.on('end', function () {
-                console.log(req.data);
-                console.log(str);
-                // your code here if you want to use the results !
-                
-                let read = false;
-                for(var i = 0; i < str.length; i++)
-                {
-                    //code here using lines[i] which will give you each line
-                    let inputLine = str[i];
+                sentences.forEach(function(s) {
+                    console.log(s);
                     
-                    if (inputLine.contains("<extract"))
-                    {
-                        read = true;
-                        continue;
-                    }
-                    if (inputLine.contains("</extract>"))
-                    {
-                        read = false;
-                        continue;
-                    }
-
-                    if (inputLine.startsWith("^ "))
-                    {
-                        continue;
-                    }
-
-                    if (read)
-                    {
-                        this.data += inputLine.replace(/[extract] => /g, '') + "\r\n";
-                    }
-                }
+                    var sent_words = s.replace(/[^a-zA-Z ]/g, "").split(" ");
+                    sent_words[0] = sent_words[0].toLowerCase();
+                    
+                    sent_words.forEach(function(word) {
+                        self.words.push(word);
+                    });
+                });
                 
-                genBreakDown();
-            });
-        }
-
-        var req = http.request(options, callback).end();
-    }
-    
-    genBreakDown()
-    {
-        let sentences = this.data.replace(/,/g, '').replace(/;/g, '').split("\\. ");
-
-        sentences.forEach(function(s) {
-            console.log(s);
-            
-            let sent_words = s.replace(/[^a-zA-Z ]/g, "").split("\\s");
-            sent_words[0] = sent_words[0].toLowerCase();
-            
-            sent_words.forEach(function(word) {
-                this.words.push(word);
-            });
+                self.isInited = true;
+            }
         });
     }
     
@@ -112,15 +68,15 @@ class Researcher {
         let nonNouns = knowledge.getNonNouns();
         
         this.words.forEach(function(word) {
-            if( word == null || word.length === 0 )
+            if( word == null || word.length === 0)
             {
-                continue;
+                return;
             }
             
-            if (isUpperCase(word))
+            if (this.isUpperCase(word))
             {
                 this.topicNames.push(word);
-                continue;
+                return;
             }
 
             if (word.endsWith("s")) // remove plurals
@@ -151,7 +107,11 @@ class Researcher {
     
     getRandomTopicNoun()
     {
-        return this.topicNouns[getRandomInt(this.topicNouns.length)];
+        var noun = this.topicNouns[this.getRandomInt(this.topicNouns.length)];
+        
+        console.log('random topic noun: ' + noun);
+        
+        return noun;
     }
     
     getTopicNames()
@@ -161,7 +121,11 @@ class Researcher {
     
     getRandomTopicName()
     {
-        return this.topicNames[getRandomInt(this.topicNames.length)];
+        var name = this.topicNames[this.getRandomInt(this.topicNames.length)];
+        
+        console.log('random topic name: ' + name);
+        
+        return name;
     }
 };
 
