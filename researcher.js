@@ -9,6 +9,7 @@ class Researcher {
 
         var url = "https://en.wikipedia.org/w/api.php?format=json&continue=&action=query&prop=extracts&exsectionformat=plain&exintro=&explaintext=&titles=" + encodeURIComponent(topic.replace(/ /g, '_'));
         
+        /*
         var self = this;
         
         this.isInited = false;
@@ -36,6 +37,7 @@ class Researcher {
                 self.isInited = true;
             }
         });
+        */
     }
     
     upperCaseFirstLetter(word)
