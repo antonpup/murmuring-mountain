@@ -27,6 +27,8 @@
   "homepage": "https://github.com/antonpup/murmuring-mountain#readme",
   "dependencies": {
     "discord.js": "^11.3.2",
+    "ffmpeg-binaries": "^3.2.2-3",
+    "node-opus": "^0.3.0",
     "request": "^2.87.0"
   }
 }

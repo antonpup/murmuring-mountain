@@ -11,7 +11,36 @@ client.on('ready', () => {
 });
 
 client.on('message', async message => {
-    if (!message.content.startsWith(process.env.PREFIX) || !message.guild)
+    
+    if (!message.guild) return;
+    
+    if(!isNaN(parseInt(message.content))) {
+        var tauntInt = parseInt(message.content);
+        var shouldJoinAudio = false;
+        
+        switch(tauntInt) {
+            
+            case 100:
+                shouldJoinAudio = true;
+                break;
+                
+            default:
+        }
+        
+        if(shouldJoinAudio) {
+            if (message.member.voiceChannel) {
+                const connection = await message.member.voiceChannel.join();
+                
+                const dispatcher = connection.play('./taunt_100.wav');
+                
+            } else {
+                message.reply('You need to join a voice channel first!');
+                return;
+            }
+        }
+    }
+    
+    if (!message.content.startsWith(process.env.PREFIX))
     {
         return;
     }
