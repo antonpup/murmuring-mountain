@@ -31,7 +31,9 @@ client.on('message', async message => {
             if (message.member.voiceChannel) {
                 const connection = await message.member.voiceChannel.join();
                 
-                const dispatcher = connection.play('./taunt_100.wav');
+                const dispatcher = connection.playFile('./taunts/keep_risin-1.mp3');
+                
+                dispatcher.on("end", end => {message.member.voiceChannel.leave();});
                 
             } else {
                 message.reply('You need to join a voice channel first!');
