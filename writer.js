@@ -47,7 +47,7 @@ class Writer {
     {
         if(null == type || type.length === 0)
         {
-            return write(wordCount);
+            return this.write(wordCount);
         }
         
         var composition = "";
