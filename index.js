@@ -170,7 +170,9 @@ client.on('message', async message => {
         let paper = new Paper(0, 50, knowledge, command);
 
         //message.channel.send('Chosen topic was ' + command);
-        return message.channel.send(paper.writePaper());
+        var text = paper.writePaper();
+        console.log(text);
+        return message.channel.send(text);
     }
 });
 
