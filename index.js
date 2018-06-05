@@ -115,7 +115,7 @@ registerTaunt(100, [{file: './taunts/ron/keep_risin-1.mp3',                     
 // Age of Empires 2 taunts - 1xx
 registerTaunt(101, [{file: './taunts/aoe2/01_yes.mp3',                                  text: 'Yes.'}]);
 registerTaunt(102, [{file: './taunts/aoe2/02_no.mp3',                                   text: 'No.'},
-                    {file: './taunts/aoe2/02_no_ru.mp3',                                text: 'No.'}]);
+                    {file: './taunts/aoe2/02_no_ru.mp3',                                text: 'Нет.'}]);
 registerTaunt(103, [{file: './taunts/aoe2/03_food_please.mp3',                          text: 'Food please.'}]);
 registerTaunt(104, [{file: './taunts/aoe2/04_wood_please.mp3',                          text: 'Wood please.'}]);
 registerTaunt(105, [{file: './taunts/aoe2/05_gold_please.mp3',                          text: 'Gold please.'}]);
@@ -124,7 +124,13 @@ registerTaunt(107, [{file: './taunts/aoe2/07_ahh.mp3',                          
 registerTaunt(108, [{file: './taunts/aoe2/08_all_hail.mp3',                             text: 'All hail, king of the losers!'}]);
 registerTaunt(109, [{file: './taunts/aoe2/09_oooh.mp3',                                 text: 'Ooh!'}]);
 registerTaunt(110, [{file: './taunts/aoe2/10_back_to_age_1.mp3',                        text: 'I\'ll beat you back to Age of Empires.'}]);
-registerTaunt(111, [{file: './taunts/aoe2/11_herb_laugh.mp3',                           text: '*(Herb laugh)*'}]);
+registerTaunt(111, [{file: './taunts/aoe2/11_herb_laugh.mp3',                           text: '*(Herb laugh)*'},
+                    {file: './taunts/ds/laugh_1.mp3',                                   text: '*(Laugh)*', chance: 0.05},
+                    {file: './taunts/ds/laugh_2.mp3',                                   text: '*(Laugh)*', chance: 0.05},
+                    {file: './taunts/ds/laugh_3.mp3',                                   text: '*(Laugh)*', chance: 0.05},
+                    {file: './taunts/ds/laugh_4.mp3',                                   text: '*(Laugh)*', chance: 0.05},
+                    {file: './taunts/ds/laugh_5.mp3',                                   text: '*(Laugh)*', chance: 0.05},
+                    ]);
 registerTaunt(112, [{file: './taunts/aoe2/12_being_rushed.mp3',                         text: 'Ah! Being rushed.'}]);
 registerTaunt(113, [{file: './taunts/aoe2/13_blame_your_isp.mp3',                       text: 'Sure, blame it on your ISP.'}]);
 registerTaunt(114, [{file: './taunts/aoe2/14_start_the_game.mp3',                       text: 'Start the game already!'}]);
@@ -220,7 +226,7 @@ function playTauntAudio(connection) {
         var isPlaying = true;
         
         const dispatcher = connection.playFile(currentTaunt.file);
-        dispatcher.setVolume(0.50);
+        dispatcher.setVolume(0.25);
         
         if (previousTaunt !== currentTaunt.tauntID) {
             currentTaunt.message.channel.send(currentTaunt.text);
