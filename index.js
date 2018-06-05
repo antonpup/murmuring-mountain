@@ -108,7 +108,53 @@ taunts[97] = {      file: ['./taunts/ron/color_orange-2.mp3'],                  
 taunts[98] = {      file: ['./taunts/ron/humanity-3.mp3'],                              text: '98. Aaaaaagh!  The humanity!'};
 taunts[99] = {      file: ['./taunts/ron/getthat-3.mp3'],                               text: '99. Let me get that for you.'};
 taunts[100] = {     file: ['./taunts/ron/keep_risin-1.mp3'],                            text: '100. They keep on rising!'};
+
 // Custom taunts
+// Age of Empires 2 taunts - 1xx
+taunts[101] = {     file: ['./taunts/aoe2/01_yes.mp3'],                                 text: '101. Yes.'};
+taunts[102] = {     file: [ './taunts/aoe2/02_no.mp3', 
+                            './taunts/aoe2/02_no_ru.mp3'],                              text: '102. No.'};
+taunts[103] = {     file: ['./taunts/aoe2/03_food_please.mp3'],                         text: '103. Food please.'};
+taunts[104] = {     file: ['./taunts/aoe2/04_wood_please.mp3'],                         text: '104. Wood please.'};
+taunts[105] = {     file: ['./taunts/aoe2/05_gold_please.mp3'],                         text: '105. Gold please.'};
+taunts[106] = {     file: ['./taunts/aoe2/06_stone_please.mp3'],                        text: '106. Stone please.'};
+taunts[107] = {     file: ['./taunts/aoe2/07_ahh.mp3'],                                 text: '107. Ahh!'};
+taunts[108] = {     file: ['./taunts/aoe2/08_all_hail.mp3'],                            text: '108. All hail, king of the losers!'};
+taunts[109] = {     file: ['./taunts/aoe2/09_oooh.mp3'],                                text: '109. Ooh!'};
+taunts[110] = {     file: ['./taunts/aoe2/10_back_to_age_1.mp3'],                       text: '110. I\'ll beat you back to Age of Empires.'};
+taunts[111] = {     file: ['./taunts/aoe2/11_herb_laugh.mp3'],                          text: '111. *(Herb laugh)*'};
+taunts[112] = {     file: ['./taunts/aoe2/12_being_rushed.mp3'],                        text: '112. Ah! Being rushed.'};
+taunts[113] = {     file: ['./taunts/aoe2/13_blame_your_isp.mp3'],                      text: '113. Sure, blame it on your ISP.'};
+taunts[114] = {     file: ['./taunts/aoe2/14_start_the_game.mp3'],                      text: '114. Start the game already!'};
+taunts[115] = {     file: ['./taunts/aoe2/15_dont_point_that_thing.mp3'],               text: '115. Don\'t point that thing at me!'};
+taunts[116] = {     file: ['./taunts/aoe2/16_enemy_sighted.mp3'],                       text: '116. Enemy sighted!'};
+taunts[117] = {     file: ['./taunts/aoe2/17_it_is_good.mp3'],                          text: '117. It is good to be the king.'};
+taunts[118] = {     file: ['./taunts/aoe2/18_i_need_a_monk.mp3'],                       text: '118. Monk! I need a monk!'};
+taunts[119] = {     file: ['./taunts/aoe2/19_long_time_no_siege.mp3'],                  text: '119. Long time, no siege.'};
+taunts[120] = {     file: ['./taunts/aoe2/20_my_granny.mp3'],                           text: '120. My granny could scrap better than that.'};
+taunts[121] = {     file: ['./taunts/aoe2/21_nice_town_ill_take_it.mp3'],               text: '121. Nice town, I\'ll take it.'};
+taunts[122] = {     file: ['./taunts/aoe2/22_quit_touchin.mp3'],                        text: '122. Quit touching me!'};
+taunts[123] = {     file: ['./taunts/aoe2/23_raiding_party.mp3'],                       text: '123. Raiding party!'};
+taunts[124] = {     file: ['./taunts/aoe2/24_dadgum.mp3'],                              text: '124. Dadgum.'};
+taunts[125] = {     file: ['./taunts/aoe2/25_smite_me.mp3'],                            text: '125. Eh, smite me.'};
+taunts[126] = {     file: ['./taunts/aoe2/26_the_wonder.mp3'],                          text: '126. The wonder, the wonder, the... no!'};
+taunts[127] = {     file: ['./taunts/aoe2/27_you_play_2_hours.mp3'],                    text: '127. You played two hours to die like this?'};
+taunts[128] = {     file: ['./taunts/aoe2/28_you_should_see_the_other_guy.mp3'],        text: '128. Yeah, well, you should see the other guy.'};
+taunts[129] = {     file: ['./taunts/aoe2/29_roggan.mp3'],                              text: '129. Roggan.'};
+taunts[130] = {     file: ['./taunts/aoe2/30_wololo.mp3'],                              text: '130. Wololo.'};
+taunts[131] = {     file: ['./taunts/aoe2/31_attack_an_enemy_now.mp3'],                 text: '131. Attack an enemy now.'};
+taunts[132] = {     file: ['./taunts/aoe2/32_cease_creating_extra_villagers.mp3'],      text: '132. Cease creating extra villagers.'};
+taunts[133] = {     file: ['./taunts/aoe2/33_create_extra_villagers.mp3'],              text: '133. Create extra villagers.'};
+taunts[134] = {     file: ['./taunts/aoe2/34_build_a_navy.mp3'],                        text: '134. Build a navy.'};
+taunts[135] = {     file: ['./taunts/aoe2/35_stop_building_a_navy.mp3'],                text: '135. Stop building a navy.'};
+taunts[136] = {     file: ['./taunts/aoe2/36_wait_for_my_signal_to_attack.mp3'],        text: '136. Wait for my signal to attack.'};
+taunts[137] = {     file: ['./taunts/aoe2/37_build_a_wonder.mp3'],                      text: '137. Build a wonder.'};
+taunts[138] = {     file: ['./taunts/aoe2/38_give_me_your_extra_resources.mp3'],        text: '138. Give me your extra resources.'};
+taunts[139] = {     file: ['./taunts/aoe2/39_ally.mp3'],                                text: '139. *(Ally sound)*'};
+taunts[140] = {     file: ['./taunts/aoe2/40_enemy.mp3'],                               text: '140. *(Enemy sound)*'};
+taunts[141] = {     file: ['./taunts/aoe2/41_neutral.mp3'],                             text: '141. *(Neutral sound)*'};
+taunts[142] = {     file: ['./taunts/aoe2/42_what_age_are_you_in.mp3'],                 text: '142. What age are you in?'};
+
 // Dota 2 taunts - 2xx where 2 stands for 2 from dota 2
 taunts[201] = {     file: [ './taunts/dota2/Crowd_1.mp3', 
                             './taunts/dota2/Crowd_2.mp3'],                              text: '201. Applause'};
@@ -130,6 +176,9 @@ taunts[225] = {     file: ['./taunts/dota2/Tech_ally_03.mp3'],                  
 taunts[420] = {     file: ['./taunts/do_you_have_the_time.mp3'],                        text: '420. Do you have the time? 420. Nice!'};
 taunts[1010] = {    file: ['./taunts/hes_thicc.mp3'],                                   text: '1010. Oh yeah. Damn. Damn boy! DAMN BOY! HE\'S THICC!'};
 taunts[1011] = {    file: ['./taunts/what_a_gamer.mp3'],                                text: '1011. Get the fuck outta my room. I\'m playing min- What a fucking GAMER. [*Uncontrollable laughter*] [*seinfeld theme*]'};
+taunts[1012] = {    file: ['./taunts/fortnite/wiggle.mp3'],                             text: '1012. *THICC*'};
+taunts[1013] = {    file: ['./taunts/thats_cheating.mp3'],                              text: '1013. That\'s cheating!'};
+taunts[1014] = {    file: ['./taunts/i_dont_get_it.mp3'],                               text: '1014. I don\'t get it.'};
 
 
 
