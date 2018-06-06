@@ -38,8 +38,7 @@ class RandomArray {
     get()
     {
         var rolledValue = Math.random() * this.maxChance;
-        
-        console.log("Rolled: " + rolledValue + " out of " + this.maxChance);
+        //console.log("Rolled: " + rolledValue + " out of " + this.maxChance);
         
         var rolledItem = null;
         

@@ -180,6 +180,107 @@ registerTaunt(223, [{file: './taunts/dota2/Tech_kill_23.mp3',                   
 registerTaunt(224, [{file: './taunts/dota2/Tech_trapgoesoff_10.mp3',                    text: 'Gotcha!'}]);
 registerTaunt(225, [{file: './taunts/dota2/Tech_ally_03.mp3',                           text: 'Just have a seat right over there. And let the smart people work.'}]);
 
+// Killing Floor taunts - 3xx
+registerTaunt(301, [{file: './taunts/kf/Yes_1.mp3',                                     text: 'Yeah, ok.'},
+                    {file: './taunts/kf/Yes_2.mp3',                                     text: 'Sure, mate.'},
+                    {file: './taunts/kf/Yes_3.mp3',                                     text: 'Yep, will do.'},
+                    {file: './taunts/kf/Yes_4.mp3',                                     text: 'No problem.'},
+                    {file: './taunts/kf/Yes_5.mp3',                                     text: 'Yeah, roger that.'},
+                    {file: './taunts/kf/Yes_6.mp3',                                     text: 'Affirmative.'},
+                    {file: './taunts/kf/Yes_7.mp3',                                     text: 'Okay, gov\'na!'}]);
+registerTaunt(302, [{file: './taunts/kf/No_1.mp3',                                      text: 'Hell no!'},
+                    {file: './taunts/kf/No_2.mp3',                                      text: 'No chance, pal.'},
+                    {file: './taunts/kf/No_3.mp3',                                      text: 'Nob off, you tosspot!'},
+                    {file: './taunts/kf/No_4.mp3',                                      text: 'Bog off, you wanker!'},
+                    {file: './taunts/kf/No_5.mp3',                                      text: 'Don\'t be bloody stupid!'},
+                    {file: './taunts/kf/No_6.mp3',                                      text: 'Bugger that.'}]);
+registerTaunt(303, [{file: './taunts/kf/Help_1.mp3',                                    text: 'A little help would be appreciated!'},
+                    {file: './taunts/kf/Help_2.mp3',                                    text: 'I\'m in deep crap here!'},
+                    {file: './taunts/kf/Help_3.mp3',                                    text: 'Help!'},
+                    {file: './taunts/kf/Help_4.mp3',                                    text: 'Help me like now!'},
+                    {file: './taunts/kf/Help_5.mp3',                                    text: 'Give me a hand over here.'},
+                    {file: './taunts/kf/Help_6.mp3',                                    text: 'For God\'s sake, help me!'},
+                    {file: './taunts/kf/Help_7.mp3',                                    text: 'Bugger it! Help me!'},
+                    {file: './taunts/kf/Help_8.mp3',                                    text: 'Hey gov\'na, I\'m up to my bloody neck in it over here!'},
+                    {file: './taunts/kf/Help_9.mp3',                                    text: 'Any time, no rush! Help!'}]);
+registerTaunt(304, [{file: './taunts/kf/Drop_Weapon_1.mp3',                             text: 'I need a bloody shooter!'},
+                    {file: './taunts/kf/Drop_Weapon_2.mp3',                             text: 'Tool me up, you tight gits!'},
+                    {file: './taunts/kf/Drop_Weapon_3.mp3',                             text: 'Come on, someone kit me out.'},
+                    {file: './taunts/kf/Drop_Weapon_4.mp3',                             text: 'Pass me a piece will ya, pal?'}]);
+registerTaunt(305, [{file: './taunts/kf/Need_money_1.mp3',                              text: 'Can you give us some money?'},
+                    {file: './taunts/kf/Need_money_2.mp3',                              text: 'I need some dosh right now.'},
+                    {file: './taunts/kf/Need_money_3.mp3',                              text: 'Can anyone lend me a tenner?'},
+                    {file: './taunts/kf/Need_money_4.mp3',                              text: 'Can you sub me a few, mate?'},
+                    {file: './taunts/kf/Need_money_5.mp3',                              text: 'Give us some bloody money, will ya?'},
+                    {file: './taunts/kf/Need_Money_6.mp3',                              text: 'I\'m a bit brasic. Can you help me out?'},
+                    {file: './taunts/kf/Need_Money_7.mp3',                              text: 'Can I scrounge some cash?'},
+                    {file: './taunts/kf/Need_Money_8.mp3',                              text: 'Give us a few quid, gov\'na.'},
+                    {file: './taunts/kf/Need_Money_9.mp3',                              text: 'Where\'s my bloody benefits cheque?'}]);
+registerTaunt(306, [{file: './taunts/kf/Medic_1.mp3',                                   text: 'Patch me up for God\'s sake!'},
+                    {file: './taunts/kf/Medic_2.mp3',                                   text: 'Jesus, I\'m bleeding! Help me!'},
+                    {file: './taunts/kf/Medic_3.mp3',                                   text: 'I\'m hit! Bloody well do something!'},
+                    {file: './taunts/kf/Medic_4.mp3',                                   text: 'Jesus, I\'m bleeding like a stuck pig!'},
+                    {file: './taunts/kf/Medic_5.mp3',                                   text: 'Where\'s the bloody quack when you want one?'},
+                    {file: './taunts/kf/Medic_6.mp3',                                   text: 'That bloody well hurts!'},
+                    {file: './taunts/kf/Medic_7.mp3',                                   text: 'I want drugs! Now!'}]);
+registerTaunt(307, [{file: './taunts/kf/Thanks_1.mp3',                                  text: 'Thanks pal!'},
+                    {file: './taunts/kf/Thanks_2.mp3',                                  text: 'Cheers, big ears!'},
+                    {file: './taunts/kf/Thanks_3.mp3',                                  text: 'Ta very much!'},
+                    {file: './taunts/kf/Thanks_4.mp3',                                  text: 'Thanks.'},
+                    {file: './taunts/kf/Thanks_5.mp3',                                  text: 'You\'re too kind.'},
+                    {file: './taunts/kf/Thanks_6.mp3',                                  text: 'Nice one, geezer.'},
+                    {file: './taunts/kf/Thanks_7.mp3',                                  text: 'Nice one, Cyril!'}]);
+registerTaunt(308, [{file: './taunts/kf/Sorry_1.mp3',                                   text: 'Oh, my mistake.'},
+                    {file: './taunts/kf/Sorry_2.mp3',                                   text: 'Oh... sorry.'},
+                    {file: './taunts/kf/Sorry_3.mp3',                                   text: 'Oh, did that hurt?'},
+                    {file: './taunts/kf/Sorry_4.mp3',                                   text: 'Whoopsie...'},
+                    {file: './taunts/kf/Sorry_5.mp3',                                   text: 'Oh, so sorry.'}]);
+registerTaunt(309, [{file: './taunts/kf/Look_Out_1.mp3',                                text: 'Look out, you plonker!'},
+                    {file: './taunts/kf/Look_Out_2.mp3',                                text: 'Man on!'},
+                    {file: './taunts/kf/Look_Out_3.mp3',                                text: 'Behind you, idiot!'},
+                    {file: './taunts/kf/Look_Out_4.mp3',                                text: 'Watch it!'},
+                    {file: './taunts/kf/Look_Out_5.mp3',                                text: 'Behind you, you tosser!'},
+                    {file: './taunts/kf/Look_Out_6.mp3',                                text: 'Wake up, you pillock!'},
+                    {file: './taunts/kf/Look_Out_7.mp3',                                text: 'Watch you back, mate!'}]);
+registerTaunt(310, [{file: './taunts/kf/Run_1.mp3',                                     text: 'Oh crap, run!'},
+                    {file: './taunts/kf/Run_2.mp3',                                     text: 'We\'re screwed! Leg it!'},
+                    {file: './taunts/kf/Run_3.mp3',                                     text: 'Damn it! Bulls up, boys!'},
+                    {file: './taunts/kf/Run_4.mp3',                                     text: 'Burn rubber, you pillocks!'},
+                    {file: './taunts/kf/Run_5.mp3',                                     text: 'Scarper!'}]);
+registerTaunt(311, [{file: './taunts/kf/Wait_for_me_1.mp3',                             text: 'Slow down, you arseholes!'},
+                    {file: './taunts/kf/Wait_for_me_2.mp3',                             text: 'Wait up! I\'m coming!'},
+                    {file: './taunts/kf/Wait_for_me_3.mp3',                             text: 'Hold on for Christ\'s sake!'},
+                    {file: './taunts/kf/Wait_for_me_4.mp3',                             text: 'I\'m bricking meself! Wait up!'},
+                    {file: './taunts/kf/Wait_for_me_5.mp3',                             text: 'Hang about! I\'m coming!'}]);
+registerTaunt(312, [{file: './taunts/kf/Weld_the_doors_1.mp3',                          text: 'Get those doors welded.'},
+                    {file: './taunts/kf/Weld_the_doors_2.mp3',                          text: 'Weld them tight.'},
+                    {file: './taunts/kf/Weld_the_doors_3.mp3',                          text: 'Seal the doors, quick!'},
+                    {file: './taunts/kf/Weld_the_doors_4.mp3',                          text: 'Get the doors, you muppets!'},
+                    {file: './taunts/kf/Weld_the_doors_5.mp3',                          text: 'One of you pikeys weld those bloody doors!'}]);
+registerTaunt(313, [{file: './taunts/kf/Hole_up_1.mp3',                                 text: 'God, remember the bleedin\' alamo?'},
+                    {file: './taunts/kf/Hole_up_2.mp3',                                 text: 'This\'ll do. I need a breather anyway.'},
+                    {file: './taunts/kf/Hole_up_3.mp3',                                 text: 'Thin red line, right here boys.'},
+                    {file: './taunts/kf/Hole_up_4.mp3',                                 text: 'Nice bolt-hole. This will do.'},
+                    {file: './taunts/kf/Hole_up_5.mp3',                                 text: 'Hunker down in here.'}]);
+registerTaunt(314, [{file: './taunts/kf/Follow_me_1.mp3',                               text: 'With me!'},
+                    {file: './taunts/kf/Follow_me_2.mp3',                               text: 'Oi, plonkers! Follow me!'},
+                    {file: './taunts/kf/Follow_me_3.mp3',                               text: 'On me!'},
+                    {file: './taunts/kf/Follow_me_4.mp3',                               text: 'Get fell in!'}]);
+registerTaunt(315, [{file: './taunts/kf/Insult_Specimens_1.mp3',                        text: 'Bloody hell! You stink!'},
+                    {file: './taunts/kf/Insult_Specimens_2.mp3',                        text: 'Wankers!'},
+                    {file: './taunts/kf/Insult_Specimens_3.mp3',                        text: 'Oooh! Thats just nasty!'},
+                    {file: './taunts/kf/Insult_Specimens_4.mp3',                        text: 'You\'re pathetic, like a bunch of bloody Millwall fans!'},
+                    {file: './taunts/kf/Insult_Specimens_5.mp3',                        text: 'Reminds me of a bunch of pikies!'},
+                    {file: './taunts/kf/Insult_Specimens_6.mp3',                        text: 'Come on! Ya\' want some, ya\' poncies?!'},
+                    {file: './taunts/kf/Insult_Specimens_7.mp3',                        text: 'You\'re all fur-coat, no knickers, bitches!'}]);
+registerTaunt(316, [{file: './taunts/kf/Insult_players_1.mp3',                          text: 'You muppet!'},
+                    {file: './taunts/kf/Insult_players_2.mp3',                          text: 'You gormless tosser!'},
+                    {file: './taunts/kf/Insult_players_3.mp3',                          text: 'Smeghead!'},
+                    {file: './taunts/kf/Insult_players_4.mp3',                          text: 'Need to borrow my specs, mate?'},
+                    {file: './taunts/kf/Insult_players_5.mp3',                          text: 'Wayne Rooney\'s smarter than you!'},
+                    {file: './taunts/kf/Insult_players_6.mp3',                          text: 'Oh, get on with it! Plod!'},
+                    {file: './taunts/kf/Insult_players_7.mp3',                          text: 'Who do you think you are? Bleedin\' action man?'}]);
+
 // Misc
 registerTaunt(420, [{file: './taunts/do_you_have_the_time.mp3',                         text: 'Do you have the time? 420. Nice!'}]);
 registerTaunt(1010, [{file: './taunts/hes_thicc.mp3',                                   text: 'Oh yeah. Damn. Damn boy! DAMN BOY! HE\'S THICC!'}]);
@@ -223,7 +324,6 @@ var previousTaunt = 0;
 function playTauntAudio(connection) {
     return new Promise(resolve => {
         var currentTaunt = tauntsQueue[0];
-        var isPlaying = true;
         
         const dispatcher = connection.playFile(currentTaunt.file);
         dispatcher.setVolume(0.25);
@@ -251,6 +351,12 @@ client.on('message', async message => {
         
         for (var i = 0; i < multipleRequests.length; i++) {
             var tauntInt = parseInt(multipleRequests[i]);
+            
+            if (tauntInt === -1) {
+                // Clear the queue
+                tauntsQueue = [];
+                return;
+            }
             
             if(isNaN(tauntInt) || typeof taunts[tauntInt] === 'undefined') {
                 // One of the requests is NaN, invalid.
@@ -282,13 +388,14 @@ client.on('message', async message => {
         
         if(shouldJoinAudio) {
             if (message.member.voiceChannel) {
-                const connection = await message.member.voiceChannel.join();
+                var voiceChannel = message.member.voiceChannel;
+                const connection = await voiceChannel.join();
                 
                 while (tauntsQueue.length > 0) {
                     await playTauntAudio(connection);
                 }
                 
-                message.member.voiceChannel.leave();
+                voiceChannel.leave();
                 previousTaunt = 0;
             } else {
                 message.reply('You need to join a voice channel first!');
