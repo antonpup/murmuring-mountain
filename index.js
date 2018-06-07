@@ -284,9 +284,15 @@ registerTaunt(316, [{file: './taunts/kf/Insult_players_1.mp3',                  
 registerTaunt(420, [{file: './taunts/do_you_have_the_time.mp3',                         text: 'Do you have the time? 420. Nice!'}], []);
 registerTaunt(1010, [{file: './taunts/hes_thicc.mp3',                                   text: 'Oh yeah. Damn. Damn boy! DAMN BOY! HE\'S THICC!'}], ["thick", "thicc"]);
 registerTaunt(1011, [{file: './taunts/what_a_gamer.mp3',                                text: 'Get the fuck outta my room. I\'m playing min- What a fucking GAMER. [*Uncontrollable laughter*] [*seinfeld theme*]'}], ["gamer"]);
-registerTaunt(1012, [{file: './taunts/fortnite/wiggle.mp3',                             text: '*THICC*'}], ["thick", "thicc", "wiggle"]);
-registerTaunt(1013, [{file: './taunts/thats_cheating.mp3',                              text: 'That\'s cheating!'}], ["cheating"]);
-registerTaunt(1014, [{file: './taunts/i_dont_get_it.mp3',                               text: 'I don\'t get it.'}], ["i_dont_get_it"]);
+registerTaunt(1012, [{file: './taunts/fortnite/wiggle.mp3',                             text: '*THICC*'}], ["fortnite", "thick", "thicc", "wiggle"]);
+registerTaunt(1013, [{file: './taunts/thats_cheating.mp3',                              text: 'That\'s cheating!'}], ["limmy", "cheating"]);
+registerTaunt(1014, [{file: './taunts/i_dont_get_it.mp3',                               text: 'I don\'t get it.'}], ["limmy", "i_dont_get_it"]);
+registerTaunt(1015, [{file: './taunts/untenable.mp3',                                   text: 'Untenable!'}], ["limmy", "untenable", "!10"]);
+registerTaunt(1016, [{file: './taunts/vsauce_or_is_it.mp3',                             text: 'Or is it? [*meme music*]'}], ["vsauce", "ponder"]);
+registerTaunt(1017, [{file: './taunts/no_laugh.mp3',                                    text: '[*Laughter*] No no no no.'}], ["no", "laugh"]);
+registerTaunt(1018, [{file: './taunts/he_fucked_up.mp3',                                text: 'It was at this moment that he knew. He fucked up.'}], ["fucked"]);
+registerTaunt(1019, [{file: './taunts/tyrone_re.mp3',                                   text: 'Reeeeeeee'}], ["tyrone", "re"]);
+registerTaunt(1020, [{file: './taunts/tyrone_e.mp3',                                    text: 'Eeeee'}], ["tyrone", "e"]);
 
 
 // Utility functions
