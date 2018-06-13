@@ -505,12 +505,21 @@ client.on('message', async message => {
     }
     else
     {
-        let paper = new Paper(0, 50, knowledge, command);
-
+        let paper = new Paper(0, 500, knowledge, command);
+        await paper.researchPaper();
+        
         //message.channel.send('Chosen topic was ' + command);
         var text = paper.writePaper();
-        console.log(text);
-        return message.channel.send(text);
+        console.log(text.length);
+        
+        for(var i = 0; i < (text.length / 2000); i++)
+        {
+            message.channel.send(text.substring(i, i+2000));
+        }
+        
+        
+        //console.log(text);
+        return;
     }
 });
 

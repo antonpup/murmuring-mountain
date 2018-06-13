@@ -7,11 +7,16 @@ class Paper {
         this.wordcount = wordcount;
         this.vocabulary = vocabulary;
         this.topic = topic;
-        this.research = new Researcher(topic);
+    }
+
+    async researchPaper()
+    {
+        this.research = new Researcher();
+        await this.research.researchTopic(this.topic);
         this.research.sortWiki(this.vocabulary);
         this.writer = new Writer(this.research, this.vocabulary);
     }
-
+    
     writePaper()
     {
         let composition = "";
@@ -25,7 +30,7 @@ class Paper {
         {
             for(let para = 0; para < this.paragraphs; para++)
             {
-                composition += "\t" + this.writer.write(this.wordcount / this.paragraphs) + "\r\n";
+                composition += this.writer.write(this.wordcount / this.paragraphs) + "\n";
             }
         }
 

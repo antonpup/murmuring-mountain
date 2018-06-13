@@ -16,7 +16,7 @@ class Writer {
         
         for(var i = 0; i < wordCount;)
         {
-            switch(this.getRandomInt(2))
+            switch(0) // this.getRandomInt(2)
             {
                 case 0:
                     sentence = this.simple();
@@ -39,6 +39,8 @@ class Writer {
             
             i += sentence.split(" ").length;
         }
+        
+        console.log(composition);
         
         return composition;
     }
