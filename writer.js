@@ -83,12 +83,12 @@ class Writer {
         if (ret_sentence.startsWith("A") || ret_sentence.startsWith("One"))
         {
             ret_sentence += ( (this.research.getRandomTopicNoun() == null) ? this.vocabulary.getRandomNoun() : this.research.getRandomTopicNoun() ) + " ";
-            ret_sentence += this.pluralize(this.vocabulary.getRandomVerb());
+            ret_sentence += this.vocabulary.getRandomVerb();
         }
         else
         {
             ret_sentence += this.pluralize( (this.research.getRandomTopicNoun() == null) ? this.vocabulary.getRandomNoun() : this.research.getRandomTopicNoun() ) + " ";
-            ret_sentence += this.vocabulary.getRandomVerb();
+            ret_sentence += this.pluralize(this.vocabulary.getRandomVerb());
         }
 
         return ret_sentence.substring(0, 1).toUpperCase() + ret_sentence.substring(1) + '.';
@@ -117,7 +117,7 @@ class Writer {
             else
             {
                 ret_sentence += ( (this.research.getRandomTopicNoun() == null) ? this.vocabulary.getRandomNoun() : this.research.getRandomTopicNoun() ) + " ";
-                ret_sentence += this.pluralize(this.vocabulary.getRandomVerb());
+                ret_sentence += this.vocabulary.getRandomVerb();
             }
 
             if (this.getRandomInt(10) > 5)
@@ -133,7 +133,7 @@ class Writer {
             }
 
             ret_sentence += this.pluralize( (this.research.getRandomTopicName() == null) ? this.vocabulary.getRandomNoun() : this.research.getRandomTopicName() ) + " ";
-            ret_sentence += this.vocabulary.getRandomVerb();
+            ret_sentence += this.pluralize(this.vocabulary.getRandomVerb());
 
             if (this.getRandomInt(10) > 5)
             {
