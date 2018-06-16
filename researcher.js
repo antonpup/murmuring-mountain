@@ -19,7 +19,7 @@ class Researcher {
 
                 if (!error && response.statusCode === 200) {
                     var wikiSample = Object.entries(body.query.pages)[0][1].extract;
-                    var sentences = wikiSample.replace(/,|;|\n|'/g, '').split(". ");
+                    var sentences = wikiSample.replace(/,|;/g, '').split(". ");
 
                     sentences.forEach((s) => {
                         var sent_words = s.replace(/[^a-zA-Z ]/g, "").split(" ");

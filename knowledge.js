@@ -13,15 +13,15 @@ class Knowledge {
         this.nonNouns = [];
         
         // Populate the lists
-        this.verbs = this.verbs.concat(filestream.readFileSync("./Knowledge/verbList.txt", 'utf-8').split("\r\n"));
-        this.nouns = this.nouns.concat(filestream.readFileSync("./Knowledge/nounList.txt", 'utf-8').split("\r\n"));
-        this.names = this.names.concat(filestream.readFileSync("./Knowledge/nameList.txt", 'utf-8').split("\r\n"));
-        this.adverbs = this.adverbs.concat(filestream.readFileSync("./Knowledge/adverbList.txt", 'utf-8').split("\r\n"));
-        this.adjectives = this.adjectives.concat(filestream.readFileSync("./Knowledge/adjectiveList.txt", 'utf-8').split("\r\n"));
-        this.articles = this.articles.concat(filestream.readFileSync("./Knowledge/articleList.txt", 'utf-8').split("\r\n"));
-        this.nouns = this.nouns.concat(filestream.readFileSync("./Knowledge/pronounList.txt", 'utf-8').split("\r\n"));
-        this.prepositions = this.prepositions.concat(filestream.readFileSync("./Knowledge/prepositionList.txt", 'utf-8').split("\r\n"));
-        this.nonNouns = this.nonNouns.concat(filestream.readFileSync("./Knowledge/nonNounList.txt", 'utf-8').split("\r\n"));
+        this.verbs = this.verbs.concat(filestream.readFileSync("./Knowledge/verbList.txt", 'utf-8').split("\n"));
+        this.nouns = this.nouns.concat(filestream.readFileSync("./Knowledge/nounList.txt", 'utf-8').split("\n"));
+        this.names = this.names.concat(filestream.readFileSync("./Knowledge/nameList.txt", 'utf-8').split("\n"));
+        this.adverbs = this.adverbs.concat(filestream.readFileSync("./Knowledge/adverbList.txt", 'utf-8').split("\n"));
+        this.adjectives = this.adjectives.concat(filestream.readFileSync("./Knowledge/adjectiveList.txt", 'utf-8').split("\n"));
+        this.articles = this.articles.concat(filestream.readFileSync("./Knowledge/articleList.txt", 'utf-8').split("\n"));
+        this.nouns = this.nouns.concat(filestream.readFileSync("./Knowledge/pronounList.txt", 'utf-8').split("\n"));
+        this.prepositions = this.prepositions.concat(filestream.readFileSync("./Knowledge/prepositionList.txt", 'utf-8').split("\n"));
+        this.nonNouns = this.nonNouns.concat(filestream.readFileSync("./Knowledge/nonNounList.txt", 'utf-8').split("\n"));
     }
     
     getRandomInt(max)

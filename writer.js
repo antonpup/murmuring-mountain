@@ -16,7 +16,7 @@ class Writer {
         
         for(var i = 0; i < wordCount;)
         {
-            switch(0) // this.getRandomInt(2)
+            switch(this.getRandomInt(2))
             {
                 case 0:
                     sentence = this.simple();
@@ -39,8 +39,6 @@ class Writer {
             
             i += sentence.split(" ").length;
         }
-        
-        console.log(composition);
         
         return composition;
     }
@@ -81,10 +79,9 @@ class Writer {
     {
         var ret_sentence = "";
         ret_sentence += this.vocabulary.getRandomArticle() + " ";
-
+        
         if (ret_sentence.startsWith("A") || ret_sentence.startsWith("One"))
         {
-            
             ret_sentence += ( (this.research.getRandomTopicNoun() == null) ? this.vocabulary.getRandomNoun() : this.research.getRandomTopicNoun() ) + " ";
             ret_sentence += this.pluralize(this.vocabulary.getRandomVerb());
         }
