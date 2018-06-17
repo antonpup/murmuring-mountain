@@ -293,6 +293,19 @@ registerTaunt(1017, [{file: './taunts/no_laugh.mp3',                            
 registerTaunt(1018, [{file: './taunts/he_fucked_up.mp3',                                text: 'It was at this moment that he knew. He fucked up.'}], ["fucked"]);
 registerTaunt(1019, [{file: './taunts/tyrone_re.mp3',                                   text: 'Reeeeeeee'}], ["tyrone", "re"]);
 registerTaunt(1020, [{file: './taunts/tyrone_e.mp3',                                    text: 'Eeeee'}], ["tyrone", "e"]);
+registerTaunt(1021, [{file: './taunts/tyrone_normies.mp3',                              text: 'Normies, get out!'}], ["tyrone", "normies"]);
+registerTaunt(69690, [{file: './taunts/adult_swim/bird_up.mp3',                         text: 'Bird up!'}], ["birdup"]);
+registerTaunt(69691, [{file: './taunts/adult_swim/bird_up_end.mp3',                     text: '*Bird Up Theme*'},
+                      {file: './taunts/adult_swim/bird_up_end2.mp3',                    text: '*Bird Up Theme*'},
+                      {file: './taunts/adult_swim/bird_up_end3.mp3',                    text: '*Bird Up Theme*'},
+                      {file: './taunts/adult_swim/bird_up_end4.mp3',                    text: '*Speedy Bird Up Theme*'}], ["birdupend"]);
+registerTaunt(69692, [{file: './taunts/adult_swim/free_realestate.mp3',                 text: 'This is free realestate!'},
+                      {file: './taunts/adult_swim/free_realestate2.mp3',                text: 'The house is free!'},
+                      {file: './taunts/adult_swim/free_realestate3.mp3',                text: 'Free realestate. I\'ll pee my pants.'},
+                      {file: './taunts/adult_swim/free_realestate4.mp3',                text: 'IT\'S A FREE HOUSE!'},
+                      {file: './taunts/adult_swim/free_realestate5.mp3',                text: 'THE HOUSE IS FREEE!'},
+                      {file: './taunts/adult_swim/free_realestate6.mp3',                text: 'It\'s free realestate.'}], ["free", "realestate"]);
+registerTaunt(69693, [{file: './taunts/adult_swim/hannibal.mp3',                        text: 'Who killed hannibal?'}], ["hannibal"]);
 
 
 // Utility functions
