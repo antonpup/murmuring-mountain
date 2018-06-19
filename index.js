@@ -280,6 +280,81 @@ registerTaunt(316, [{file: './taunts/kf/Insult_players_1.mp3',                  
                     {file: './taunts/kf/Insult_players_6.mp3',                          text: 'Oh, get on with it! Plod!'},
                     {file: './taunts/kf/Insult_players_7.mp3',                          text: 'Who do you think you are? Bleedin\' action man?'}], ["kf", "insult", "player"]);
 
+// Dungeons of Dreadmore taunts - 5xx
+registerTaunt(500, [{file: './taunts/dredmor/caketown.mp3',                             text: 'This is caketown.'}], ["dredmor", "cake", "town", "caketown"]);
+registerTaunt(501, [{file: './taunts/dredmor/combo.mp3',                                text: 'Cccccombo breaker.'},
+                    {file: './taunts/dredmor/combo1.mp3',                               text: 'Ccccccombo!'}], ["dredmor", "combo", "breaker"]);
+registerTaunt(502, [{file: './taunts/dredmor/crit1.mp3',                                text: 'Cccccritical hit!'}], ["dredmor", "crit", "critical", "hit"]);
+registerTaunt(503, [{file: './taunts/dredmor/full_inventory_1.mp3',                     text: 'Your inventory is full.'},
+                    {file: './taunts/dredmor/full_inventory_2.mp3',                     text: 'YOUR INVENTORY IS FULL.'}], ["dredmor", "full", "inventory"]);
+registerTaunt(504, [{file: './taunts/dredmor/heroic_vandalism.mp3',                     text: 'Heroic vandalism!'},
+                    {file: './taunts/dredmor/vox_heroic_vandalism01.mp3',               text: 'Heroic vandalism!'},
+                    {file: './taunts/dredmor/vox_heroic_vandalism02.mp3',               text: 'Heroic vandalism!'},
+                    {file: './taunts/dredmor/vox_heroic_vandalism03.mp3',               text: 'Heroic vandalism!'}], ["dredmor", "heroic", "vandalism"]);
+registerTaunt(505, [{file: './taunts/dredmor/item_is_purchased_or_sold.mp3',            text: '*Ka-Ching*'}], ["dredmor", "purchase", "moneysound", "kaching"]);
+registerTaunt(506, [{file: './taunts/dredmor/momentum.mp3',                             text: 'Momentum.'},
+                    {file: './taunts/dredmor/momentum01more.mp3',                       text: 'More momentum.'},
+                    {file: './taunts/dredmor/momentum02mega.mp3',                       text: 'Mega momentum.'},
+                    {file: './taunts/dredmor/momentum03masterful.mp3',                  text: 'Masterful momentum.'},
+                    {file: './taunts/dredmor/momentum04marvelous.mp3',                  text: 'Marvelous momentum.'},
+                    {file: './taunts/dredmor/momentum05magnificent.mp3',                text: 'Magnificent momentum.'},
+                    {file: './taunts/dredmor/momentum06multitudinous.mp3',              text: 'Multitudinous momentum.'},
+                    {file: './taunts/dredmor/momentum07morbid.mp3',                     text: 'Morbid momentum.'},
+                    {file: './taunts/dredmor/momentum08machiavellian.mp3',              text: 'Machiavellian momentum.'}], ["dredmor", "momentum"]);
+registerTaunt(507, [{file: './taunts/dredmor/nonchalant_whistling.mp3',                 text: '*Nonchalant whistling*'}], ["dredmor", "whistle", "whistling"]);
+registerTaunt(508, [{file: './taunts/dredmor/paranormal0.mp3',                          text: '*Paranormal sound*'},
+                    {file: './taunts/dredmor/paranormal1.mp3',                          text: '*Paranormal sound*'}], ["dredmor", "paranormal", "spooky"]);
+registerTaunt(509, [{file: './taunts/dredmor/player_levels_up.mp3',                     text: '*Level up*'}], ["dredmor", "levelup", "level"]);
+registerTaunt(510, [{file: './taunts/dredmor/player_screams.mp3',                       text: 'AAAAAAAAAAHHHH!'},
+                    {file: './taunts/dredmor/players_head_explodes_via_poison.mp3',     text: 'AAAAAAAAAAHHHH! *Head pop*'}], ["dredmor", "scream", "aaaahhhh"]);
+registerTaunt(511, [{file: './taunts/dredmor/vox_about_to_die01a.mp3',                  text: 'You\'re about to die.'},
+                    {file: './taunts/dredmor/vox_about_to_die02a.mp3',                  text: 'You\'re about to die.'},
+                    {file: './taunts/dredmor/vox_about_to_die02b.mp3',                  text: 'You\'re about to die.'}], ["dredmor", "die"]);
+registerTaunt(512, [{file: './taunts/dredmor/vox_brain_too_dumb01a.mp3',                text: 'No. Your brain is too dumb.'},
+                    {file: './taunts/dredmor/vox_brain_too_dumb02a.mp3',                text: 'No. Your brain is too dumb.'},
+                    {file: './taunts/dredmor/vox_brain_too_dumb02b.mp3',                text: 'No. Your brain is too dumb.'}], ["dredmor", "dumb", "brain"]);
+registerTaunt(513, [{file: './taunts/dredmor/vox_cast_req_booze01a.mp3',                text: 'Casting spells requires booze.'},
+                    {file: './taunts/dredmor/vox_cast_req_booze02a.mp3',                text: 'Casting spells requires booze!'}], ["dredmor", "spells", "booze"]);
+registerTaunt(514, [{file: './taunts/dredmor/vox_drink_more_booze01a.mp3',              text: 'Drink more booze.'},
+                    {file: './taunts/dredmor/vox_drink_more_booze02a.mp3',              text: 'Drink more booze!'}], ["dredmor", "drink", "booze"]);
+registerTaunt(515, [{file: './taunts/dredmor/vox_economy_doesnt_run02a.mp3',            text: 'This economy doesn\'t run on hopes and dreams.'},
+                    {file: './taunts/dredmor/vox_financial_solvency02a.mp3',            text: 'You better work on your financial solvency.'}], ["dredmor", "economy", "financial"]);
+registerTaunt(516, [{file: './taunts/dredmor/vox_health_critical01a.mp3',               text: 'Your health is critial.'},
+                    {file: './taunts/dredmor/vox_health_critical01b.mp3',               text: 'Your health is critial.'},
+                    {file: './taunts/dredmor/vox_health_critical02a.mp3',               text: 'Your health is critial!'}], ["dredmor", "health", "critical"]);
+registerTaunt(517, [{file: './taunts/dredmor/vox_health_low01a.mp3',                    text: 'Your health is low.'},
+                    {file: './taunts/dredmor/vox_health_low02a.mp3',                    text: 'Your health is low!'}], ["dredmor", "health", "low"]);
+registerTaunt(518, [{file: './taunts/dredmor/vox_need_food_badly01a.mp3',               text: 'You need food, badly!'},
+                    {file: './taunts/dredmor/vox_need_food_badly02a.mp3',               text: 'You need food, badly!'},
+                    {file: './taunts/dredmor/vox_need_food_badly02b.mp3',               text: 'You need food, badly!'}], ["dredmor", "need", "food"]);
+registerTaunt(519, [{file: './taunts/dredmor/vox_please_dont_go03.mp3',                 text: 'Please don\'t go.'}], ["dredmor", "dont_go"]);
+registerTaunt(520, [{file: './taunts/dredmor/vox_too_sober01a.mp3',                     text: 'You are too sober.'},
+                    {file: './taunts/dredmor/vox_too_sober02a.mp3',                     text: 'You are too sober!'}], ["dredmor", "sober"]);
+
+// Duty Calls taunts - 6xx
+registerTaunt(600, [{file: './taunts/duty_calls/snd_bloody_screen.mp3',                 text: 'Bbbbloddy screen. So real.'}], ["dutycalls", "bloody", "screen"]);
+registerTaunt(601, [{file: './taunts/duty_calls/snd_rank_up_01.mp3',                    text: 'Rank up! Master sergeant shooter person!'}], ["dutycalls", "rankup", "rankup1"]);
+registerTaunt(602, [{file: './taunts/duty_calls/snd_rank_up_02.mp3',                    text: 'Rank up! Master sergeant shooter sergeant person!'}], ["dutycalls", "rankup", "rankup2"]);
+registerTaunt(603, [{file: './taunts/duty_calls/snd_rank_up_03.mp3',                    text: 'Rank up! Master sergeant shooter sergeant important person of sergeants extreme!'}], ["dutycalls", "rankup", "rankup3"]);
+registerTaunt(604, [{file: './taunts/duty_calls/snd_rank_up_04.mp3',                    text: 'Rank up! Sergeant sergeant master sergeant shooter person!'}], ["dutycalls", "rankup", "rankup4"]);
+registerTaunt(605, [{file: './taunts/duty_calls/snd_rank_up_05.mp3',                    text: 'Rank up! Sergeant of the master sergeant most important person of extreme sergeants to the max!'}], ["dutycalls", "rankup", "rankup5"]);
+registerTaunt(606, [{file: './taunts/duty_calls/snd_slomo_start.mp3',                   text: '*Slow*'}], ["dutycalls", "slow"]);
+registerTaunt(607, [{file: './taunts/duty_calls/snd_slomo_end.mp3',                     text: '*Fast*'}], ["dutycalls", "fast"]);
+registerTaunt(608, [{file: './taunts/duty_calls/vox_crateenemy2_hi.mp3',                text: 'I am an enemy two.'},
+                    {file: './taunts/duty_calls/vox_crateenemy3_hi.mp3',                text: 'I am also an enemy.'},
+                    {file: './taunts/duty_calls/vox_woodenemy1_hi.mp3',                 text: 'I\'m yet another enemy.'},
+                    {file: './taunts/duty_calls/vox_woodenemy2_hi.mp3',                 text: 'I am also an enemy.'}], ["dutycalls", "enemy_hi"]);
+registerTaunt(609, [{file: './taunts/duty_calls/vox_crateenemy2_ow.mp3',                text: 'Ow.'},
+                    {file: './taunts/duty_calls/vox_crateenemy3_ow.mp3',                text: 'Oww.'},
+                    {file: './taunts/duty_calls/vox_woodenemy1_ow.mp3',                 text: 'Ow.'},
+                    {file: './taunts/duty_calls/vox_woodenemy2_ow.mp3',                 text: 'Ow.'}], ["dutycalls", "enemy_ow", "ow"]);
+registerTaunt(610, [{file: './taunts/duty_calls/vox_player_boring_01.mp3',              text: 'Boring.'},
+                    {file: './taunts/duty_calls/vox_player_boring_02.mp3',              text: 'Boring.'},
+                    {file: './taunts/duty_calls/vox_player_boring_03.mp3',              text: 'Boring.'},
+                    {file: './taunts/duty_calls/vox_player_boring_04.mp3',              text: 'Boring.'},
+                    {file: './taunts/duty_calls/vox_player_boring_05.mp3',              text: 'Boring.'},
+                    {file: './taunts/duty_calls/vox_player_boring_06.mp3',              text: 'Boring.'}], ["dutycalls", "boring"]);
+
 // Misc
 registerTaunt(420, [{file: './taunts/do_you_have_the_time.mp3',                         text: 'Do you have the time? 420. Nice!'}], []);
 registerTaunt(1010, [{file: './taunts/hes_thicc.mp3',                                   text: 'Oh yeah. Damn. Damn boy! DAMN BOY! HE\'S THICC!'}], ["thick", "thicc"]);
