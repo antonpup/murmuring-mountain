@@ -355,6 +355,10 @@ registerTaunt(610, [{file: './taunts/duty_calls/vox_player_boring_01.mp3',      
                     {file: './taunts/duty_calls/vox_player_boring_05.mp3',              text: 'Boring.'},
                     {file: './taunts/duty_calls/vox_player_boring_06.mp3',              text: 'Boring.'}], ["dutycalls", "boring"]);
 
+// iDubbbz taunts - 7xx 
+registerTaunt(700, [{file: './taunts/idubbbz/I_want_to_die.mp3',                        text: 'I want to die.'}], ["idubbbz", "want", "die"]);
+registerTaunt(701, [{file: './taunts/idubbbz/pretty_good.mp3',                          text: 'Hey, that\'s pretty good.'}], ["idubbbz", "pretty", "good"]);
+
 // Misc
 registerTaunt(420, [{file: './taunts/do_you_have_the_time.mp3',                         text: 'Do you have the time? 420. Nice!'}], []);
 registerTaunt(1010, [{file: './taunts/hes_thicc.mp3',                                   text: 'Oh yeah. Damn. Damn boy! DAMN BOY! HE\'S THICC!'}], ["thick", "thicc"]);
