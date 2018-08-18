@@ -428,7 +428,7 @@ registerTaunt(804, [{file: './taunts/pp/sound_horatio_speak01.mp3',             
                     {file: './taunts/pp/sound_horatio_speak57.mp3',                     text: '*Horatio speaking*'},
                     {file: './taunts/pp/sound_horatio_speak58.mp3',                     text: '*Horatio speaking*'},
                     {file: './taunts/pp/sound_horatio_speak59.mp3',                     text: '*Horatio speaking*'},
-                    {file: './taunts/pp/sound_horatio_speak60.mp3',                     text: '*Horatio speaking*'}], ["pit_people", "pp", "horatio"]);
+                    {file: './taunts/pp/sound_horatio_speak60.mp3',                     text: '*Horatio speaking*'}], ["pit_people", "pp", "horatio", "speak"]);
 registerTaunt(805, [{file: './taunts/pp/sound_man_speak01.mp3',                         text: '*Man speaking*'},
                     {file: './taunts/pp/sound_man_speak02.mp3',                         text: '*Man speaking*'},
                     {file: './taunts/pp/sound_man_speak03.mp3',                         text: '*Man speaking*'},
@@ -612,6 +612,7 @@ registerTaunt(1018, [{file: './taunts/he_fucked_up.mp3',                        
 registerTaunt(1019, [{file: './taunts/tyrone_re.mp3',                                   text: 'Reeeeeeee'}], ["tyrone", "re"]);
 registerTaunt(1020, [{file: './taunts/tyrone_e.mp3',                                    text: 'Eeeee'}], ["tyrone", "e"]);
 registerTaunt(1021, [{file: './taunts/tyrone_normies.mp3',                              text: 'Normies, get out!'}], ["tyrone", "normies"]);
+registerTaunt(1022, [{file: './taunts/why_bully.mp3',                                   text: 'Why you bully me?'}], ["bully", "why"]);
 registerTaunt(69690, [{file: './taunts/adult_swim/bird_up.mp3',                         text: 'Bird up!'}], ["birdup"]);
 registerTaunt(69691, [{file: './taunts/adult_swim/bird_up_end.mp3',                     text: '*Bird Up Theme*'},
                       {file: './taunts/adult_swim/bird_up_end2.mp3',                    text: '*Bird Up Theme*'},
