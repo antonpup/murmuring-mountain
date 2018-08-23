@@ -615,6 +615,8 @@ registerTaunt(1021, [{file: './taunts/tyrone_normies.mp3',                      
 registerTaunt(1022, [{file: './taunts/why_bully.mp3',                                   text: 'Why you bully me?'}], ["bully", "why"]);
 registerTaunt(1023, [{file: './taunts/we_got_him.mp3',                                  text: 'Ladies and gentlemen. We got him.'},
                      {file: './taunts/gottem.mp3',                                      text: 'HA! Gottem!', chance: 0.05}], ["got", "him", "gottem"]);
+registerTaunt(1024, [{file: './taunts/fbi_open.mp3',                                    text: 'FBI OPEN UP!'}], ["fbi", "open"]);
+registerTaunt(1025, [{file: './taunts/fbi_entry.mp3',                                   text: '*FBI Agents entering*'}], ["fbi", "entry", "enter"]);
 registerTaunt(69690, [{file: './taunts/adult_swim/bird_up.mp3',                         text: 'Bird up!'}], ["birdup"]);
 registerTaunt(69691, [{file: './taunts/adult_swim/bird_up_end.mp3',                     text: '*Bird Up Theme*'},
                       {file: './taunts/adult_swim/bird_up_end2.mp3',                    text: '*Bird Up Theme*'},
