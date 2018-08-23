@@ -338,8 +338,8 @@ registerTaunt(602, [{file: './taunts/duty_calls/snd_rank_up_02.mp3',            
 registerTaunt(603, [{file: './taunts/duty_calls/snd_rank_up_03.mp3',                    text: 'Rank up! Master sergeant shooter sergeant important person of sergeants extreme!'}], ["dutycalls", "rankup", "rankup3"]);
 registerTaunt(604, [{file: './taunts/duty_calls/snd_rank_up_04.mp3',                    text: 'Rank up! Sergeant sergeant master sergeant shooter person!'}], ["dutycalls", "rankup", "rankup4"]);
 registerTaunt(605, [{file: './taunts/duty_calls/snd_rank_up_05.mp3',                    text: 'Rank up! Sergeant of the master sergeant most important person of extreme sergeants to the max!'}], ["dutycalls", "rankup", "rankup5"]);
-registerTaunt(606, [{file: './taunts/duty_calls/snd_slomo_start.mp3',                   text: '*Slow*'}], ["dutycalls", "slow"]);
-registerTaunt(607, [{file: './taunts/duty_calls/snd_slomo_end.mp3',                     text: '*Fast*'}], ["dutycalls", "fast"]);
+registerTaunt(606, [{file: './taunts/duty_calls/snd_slomo_start.mp3',                   text: '*Slow*'}], ["dutycalls", "slow", "slowdown"]);
+registerTaunt(607, [{file: './taunts/duty_calls/snd_slomo_end.mp3',                     text: '*Fast*'}], ["dutycalls", "fast", "speedup"]);
 registerTaunt(608, [{file: './taunts/duty_calls/vox_crateenemy2_hi.mp3',                text: 'I am an enemy two.'},
                     {file: './taunts/duty_calls/vox_crateenemy3_hi.mp3',                text: 'I am also an enemy.'},
                     {file: './taunts/duty_calls/vox_woodenemy1_hi.mp3',                 text: 'I\'m yet another enemy.'},
@@ -515,7 +515,7 @@ registerTaunt(808, [{file: './taunts/pp/sound_narrator_movecity01.mp3',         
                     {file: './taunts/pp/sound_narrator_movecity23.mp3',                 text: 'I\'m going to move the entire city to a new place now. And there\'s nothing you can do about it. How hopeless. How. Hopeless.'},
                     {file: './taunts/pp/sound_narrator_movecity24.mp3',                 text: 'It\'s time to dispose of this roach trap once and for all. Kidding.'},
                     {file: './taunts/pp/sound_narrator_movecity25.mp3',                 text: 'Oh no, he\'s going to throw us into the ocean and watch us all drown. '}], ["pit_people", "pp", "narrator", "movecity"]);
-registerTaunt(809, [{file: './taunts/pp/sound_narrator_story01b_butterfingers.mp3',     text: 'OUPS! BUTTERFINGERS!'}], ["pit_people", "pp", "narrator", "butterfinger"]);
+registerTaunt(809, [{file: './taunts/pp/sound_narrator_story01b_butterfingers.mp3',     text: 'OUPS! BUTTERFINGERS!'}], ["pit_people", "pp", "narrator", "butterfinger", "butterfingers"]);
 registerTaunt(810, [{file: './taunts/pp/sound_narrator_story01b_HoratioDies.mp3',       text: 'I SAID HORATIO DIES!!'},
                     {file: './taunts/pp/sound_narrator_story01b_HoratioDies2.mp3',      text: 'I said Horatio dies.'}], ["pit_people", "pp", "narrator", "horatio", "dies"]);
 registerTaunt(811, [{file: './taunts/pp/sound_narrator_story01b_Naughty.mp3',           text: 'Naughty boys who don\'t listen get punished.'}], ["pit_people", "pp", "narrator", "naughty"]);
@@ -613,6 +613,8 @@ registerTaunt(1019, [{file: './taunts/tyrone_re.mp3',                           
 registerTaunt(1020, [{file: './taunts/tyrone_e.mp3',                                    text: 'Eeeee'}], ["tyrone", "e"]);
 registerTaunt(1021, [{file: './taunts/tyrone_normies.mp3',                              text: 'Normies, get out!'}], ["tyrone", "normies"]);
 registerTaunt(1022, [{file: './taunts/why_bully.mp3',                                   text: 'Why you bully me?'}], ["bully", "why"]);
+registerTaunt(1023, [{file: './taunts/we_got_him.mp3',                                  text: 'Ladies and gentlemen. We got him.'},
+                     {file: './taunts/gottem.mp3',                                      text: 'HA! Gottem!', chance: 0.05}], ["got", "him", "gottem"]);
 registerTaunt(69690, [{file: './taunts/adult_swim/bird_up.mp3',                         text: 'Bird up!'}], ["birdup"]);
 registerTaunt(69691, [{file: './taunts/adult_swim/bird_up_end.mp3',                     text: '*Bird Up Theme*'},
                       {file: './taunts/adult_swim/bird_up_end2.mp3',                    text: '*Bird Up Theme*'},
