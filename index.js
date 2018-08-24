@@ -617,6 +617,16 @@ registerTaunt(1023, [{file: './taunts/we_got_him.mp3',                          
                      {file: './taunts/gottem.mp3',                                      text: 'HA! Gottem!', chance: 0.05}], ["got", "him", "gottem"]);
 registerTaunt(1024, [{file: './taunts/fbi_open.mp3',                                    text: 'FBI OPEN UP!'}], ["fbi", "open"]);
 registerTaunt(1025, [{file: './taunts/fbi_entry.mp3',                                   text: '*FBI Agents entering*'}], ["fbi", "entry", "enter"]);
+registerTaunt(1026, [{file: './taunts/xfiles.mp3',                                      text: '*X-Files theme song*'}], ["xfiles", "illuminati"]);
+registerTaunt(1027, [{file: './taunts/fail.mp3',                                        text: '*Fail*'},
+                     {file: './taunts/fail_2.mp3',                                      text: '*Fail*'}], ["fail"]);
+registerTaunt(1028, [{file: './taunts/inception_horn.mp3',                              text: '*Horn*'}], ["inception", "horn"]);
+registerTaunt(1029, [{file: './taunts/msg_alert.mp3',                                   text: '*Alert!*'}], ["alert", "mgs"]);
+registerTaunt(1030, [{file: './taunts/record_scratch.mp3',                              text: '*Record Scratch*'},
+                     {file: './taunts/record_scratch_2.mp3',                            text: '*Record Scratch*'}], ["record", "scratch"]);
+registerTaunt(1031, [{file: './taunts/sad_music.mp3',                                   text: '*Sad Music*'},
+                     {file: './taunts/sad_music_2.mp3',                                 text: '*Sad Music*'}], ["sad", "music"]);
+
 registerTaunt(69690, [{file: './taunts/adult_swim/bird_up.mp3',                         text: 'Bird up!'}], ["birdup"]);
 registerTaunt(69691, [{file: './taunts/adult_swim/bird_up_end.mp3',                     text: '*Bird Up Theme*'},
                       {file: './taunts/adult_swim/bird_up_end2.mp3',                    text: '*Bird Up Theme*'},
