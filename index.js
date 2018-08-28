@@ -178,6 +178,15 @@ registerTaunt(222, [{file: './taunts/dota2/Pud_thanks_02.mp3',                  
 registerTaunt(223, [{file: './taunts/dota2/Tech_kill_23.mp3',                           text: 'He he he, hehe ah ha! Oh ho ho oh oh ha ha ha!'}], ["dota", "techies", "kill", "ha", "haha", "he", "hehe", "laugh" ]);
 registerTaunt(224, [{file: './taunts/dota2/Tech_trapgoesoff_10.mp3',                    text: 'Gotcha!'}], ["dota", "techies", "gotcha"]);
 registerTaunt(225, [{file: './taunts/dota2/Tech_ally_03.mp3',                           text: 'Just have a seat right over there. And let the smart people work.'}], ["dota", "techies", "smart", "work", "seat"]);
+registerTaunt(226, [{file: './taunts/dota2/Gaben_ann_kill_triple_02.mp3',               text: 'Impossible kill.'},
+                    {file: './taunts/dota2/Gaben_ann_kill_triple_03.mp3',               text: 'More than two kills, but less than four kills.'},
+                    {file: './taunts/dota2/Gaben_ann_kill_no_01.mp3',                   text: 'I\'m not reading this.', chance: 0.15}], ["dota", "gaben", "triple", "3kill", "3kills"]);
+registerTaunt(227, [{file: './taunts/dota2/Gaben_ann_kill_no_01.mp3',                   text: 'I\'m not reading this.'}], ["dota", "gaben", "no", "notreading"]);
+registerTaunt(228, [{file: './taunts/dota2/Gaben_ann_kill_followup_42.mp3',             text: 'The entire team was an ass, and we won\'t be working with them again.'}], ["dota", "gaben", "followup", "ass", "team"]);
+registerTaunt(229, [{file: './taunts/dota2/Gaben_ann_kill_followup_46.mp3',             text: 'Just ALT F4.'}], ["dota", "gaben", "followup", "alt", "f4"]);
+registerTaunt(230, [{file: './taunts/dota2/Gaben_ann_kill_followup_48.mp3',             text: 'Um, this isn\'t working.'}], ["dota", "gaben", "followup", "isnt", "working"]);
+registerTaunt(231, [{file: './taunts/dota2/Gaben_ann_kill_followup_52.mp3',             text: 'By far the most advanced scam I\'ve ever encountered.'}], ["dota", "gaben", "followup", "scam"]);
+
 
 // Killing Floor taunts - 3xx
 registerTaunt(301, [{file: './taunts/kf/Yes_1.mp3',                                     text: 'Yeah, ok.'},
