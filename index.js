@@ -732,7 +732,7 @@ client.on('message', async message => {
                 var tagEntry = tagEntries[i].trim();
                 var tagTauntInt = parseInt(tagEntry);
                 
-                if(!isNaN(tagTauntInt) && typeof taunts[tagTauntInt] !== 'undefined') {
+                if(/^\d+$/.test(tagEntry) && !isNaN(tagTauntInt) && typeof taunts[tagTauntInt] !== 'undefined') {
                     requestedIDs.push(tagTauntInt);
                 } else {
                     var subTags = tagEntry.split(' ');
