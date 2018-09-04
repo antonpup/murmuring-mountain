@@ -635,6 +635,7 @@ registerTaunt(1030, [{file: './taunts/record_scratch.mp3',                      
                      {file: './taunts/record_scratch_2.mp3',                            text: '*Record Scratch*'}], ["record", "scratch"]);
 registerTaunt(1031, [{file: './taunts/sad_music.mp3',                                   text: '*Sad Music*'},
                      {file: './taunts/sad_music_2.mp3',                                 text: '*Sad Music*'}], ["sad", "music"]);
+registerTaunt(1032, [{file: './taunts/who_invited.mp3',                                 text: 'Fuck off! Who invited you?'}], ["fuck_off", "invited", "fuck"]);
 
 registerTaunt(69690, [{file: './taunts/adult_swim/bird_up.mp3',                         text: 'Bird up!'}], ["birdup"]);
 registerTaunt(69691, [{file: './taunts/adult_swim/bird_up_end.mp3',                     text: '*Bird Up Theme*'},
