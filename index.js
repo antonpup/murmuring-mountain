@@ -125,11 +125,11 @@ registerTaunt(108, [{file: './taunts/aoe2/08_all_hail.mp3',                     
 registerTaunt(109, [{file: './taunts/aoe2/09_oooh.mp3',                                 text: 'Ooh!'}], ["aoe2", "ohh", "oh"]);
 registerTaunt(110, [{file: './taunts/aoe2/10_back_to_age_1.mp3',                        text: 'I\'ll beat you back to Age of Empires.'}], ["aoe2", "beat"]);
 registerTaunt(111, [{file: './taunts/aoe2/11_herb_laugh.mp3',                           text: '*(Herb laugh)*'},
-                    {file: './taunts/ds/laugh_1.mp3',                                   text: '*(Laugh)*', chance: 0.05},
-                    {file: './taunts/ds/laugh_2.mp3',                                   text: '*(Laugh)*', chance: 0.05},
-                    {file: './taunts/ds/laugh_3.mp3',                                   text: '*(Laugh)*', chance: 0.05},
-                    {file: './taunts/ds/laugh_4.mp3',                                   text: '*(Laugh)*', chance: 0.05},
-                    {file: './taunts/ds/laugh_5.mp3',                                   text: '*(Laugh)*', chance: 0.05}], ["aoe2", "laugh"]);
+                    {file: './taunts/ds/laugh_1.mp3',                                   text: '*(Laugh)*', chance: 2.5},
+                    {file: './taunts/ds/laugh_2.mp3',                                   text: '*(Laugh)*', chance: 2.5},
+                    {file: './taunts/ds/laugh_3.mp3',                                   text: '*(Laugh)*', chance: 2.5},
+                    {file: './taunts/ds/laugh_4.mp3',                                   text: '*(Laugh)*', chance: 2.5},
+                    {file: './taunts/ds/laugh_5.mp3',                                   text: '*(Laugh)*', chance: 2.5}], ["aoe2", "laugh"]);
 registerTaunt(112, [{file: './taunts/aoe2/12_being_rushed.mp3',                         text: 'Ah! Being rushed.'}], ["aoe2", "rush", "rushed"]);
 registerTaunt(113, [{file: './taunts/aoe2/13_blame_your_isp.mp3',                       text: 'Sure, blame it on your ISP.'}], ["aoe2", "isp"]);
 registerTaunt(114, [{file: './taunts/aoe2/14_start_the_game.mp3',                       text: 'Start the game already!'}], ["aoe2", "start", "game"]);
@@ -180,7 +180,7 @@ registerTaunt(224, [{file: './taunts/dota2/Tech_trapgoesoff_10.mp3',            
 registerTaunt(225, [{file: './taunts/dota2/Tech_ally_03.mp3',                           text: 'Just have a seat right over there. And let the smart people work.'}], ["dota", "techies", "smart", "work", "seat"]);
 registerTaunt(226, [{file: './taunts/dota2/Gaben_ann_kill_triple_02.mp3',               text: 'Impossible kill.'},
                     {file: './taunts/dota2/Gaben_ann_kill_triple_03.mp3',               text: 'More than two kills, but less than four kills.'},
-                    {file: './taunts/dota2/Gaben_ann_kill_no_01.mp3',                   text: 'I\'m not reading this.', chance: 0.15}], ["dota", "gaben", "triple", "3kill", "3kills"]);
+                    {file: './taunts/dota2/Gaben_ann_kill_no_01.mp3',                   text: 'I\'m not reading this.', chance: 15.0}], ["dota", "gaben", "triple", "3kill", "3kills"]);
 registerTaunt(227, [{file: './taunts/dota2/Gaben_ann_kill_no_01.mp3',                   text: 'I\'m not reading this.'}], ["dota", "gaben", "no", "notreading"]);
 registerTaunt(228, [{file: './taunts/dota2/Gaben_ann_kill_followup_42.mp3',             text: 'The entire team was an ass, and we won\'t be working with them again.'}], ["dota", "gaben", "followup", "ass", "team"]);
 registerTaunt(229, [{file: './taunts/dota2/Gaben_ann_kill_followup_46.mp3',             text: 'Just ALT F4.'}], ["dota", "gaben", "followup", "alt", "f4"]);
@@ -623,7 +623,7 @@ registerTaunt(1020, [{file: './taunts/tyrone_e.mp3',                            
 registerTaunt(1021, [{file: './taunts/tyrone_normies.mp3',                              text: 'Normies, get out!'}], ["tyrone", "normies"]);
 registerTaunt(1022, [{file: './taunts/why_bully.mp3',                                   text: 'Why you bully me?'}], ["bully", "why"]);
 registerTaunt(1023, [{file: './taunts/we_got_him.mp3',                                  text: 'Ladies and gentlemen. We got him.'},
-                     {file: './taunts/gottem.mp3',                                      text: 'HA! Gottem!', chance: 0.05}], ["got", "him", "gottem"]);
+                     {file: './taunts/gottem.mp3',                                      text: 'HA! Gottem!', chance: 5.0}], ["got", "him", "gottem"]);
 registerTaunt(1024, [{file: './taunts/fbi_open.mp3',                                    text: 'FBI OPEN UP!'}], ["fbi", "open"]);
 registerTaunt(1025, [{file: './taunts/fbi_entry.mp3',                                   text: '*FBI Agents entering*'}], ["fbi", "entry", "enter"]);
 registerTaunt(1026, [{file: './taunts/xfiles.mp3',                                      text: '*X-Files theme song*'}], ["xfiles", "illuminati"]);
@@ -636,6 +636,21 @@ registerTaunt(1030, [{file: './taunts/record_scratch.mp3',                      
 registerTaunt(1031, [{file: './taunts/sad_music.mp3',                                   text: '*Sad Music*'},
                      {file: './taunts/sad_music_2.mp3',                                 text: '*Sad Music*'}], ["sad", "music"]);
 registerTaunt(1032, [{file: './taunts/who_invited.mp3',                                 text: 'Fuck off! Who invited you?'}], ["fuck_off", "invited", "fuck"]);
+registerTaunt(1033, [{file: './taunts/jtron_best_game.mp3',                             text: '10/10 ten outta ten. Hundred out of hundred. Best game.'}], ["jtron", "best", "game", "best_game"]);
+registerTaunt(1034, [{file: './taunts/jtron_dont_know.mp3',                             text: 'You don\'t know what you\'re doing here.'}], ["jtron", "dont", "know", "doing"]);
+registerTaunt(1035, [{file: './taunts/jtron_dont_like.mp3',                             text: 'I don\'t like where this is going.'}], ["jtron", "dont", "like"]);
+registerTaunt(1036, [{file: './taunts/jtron_gg.mp3',                                    text: 'This gonna be a good game.'}], ["jtron", "good", "game", "gg"]);
+registerTaunt(1037, [{file: './taunts/jtron_load_of_shit.mp3',                          text: 'Well that was a load of shit.'}], ["jtron", "shit"]);
+registerTaunt(1038, [{file: './taunts/jtron_make_work.mp3',                             text: 'I can make this work.'}], ["jtron", "make", "work", "make_work"]);
+registerTaunt(1039, [{file: './taunts/jtron_nonono.mp3',                                text: 'No no no nooo no no nononon'}], ["jtron", "no"]);
+registerTaunt(1040, [{file: './taunts/jtron_stop1.mp3',                                 text: 'Stop!'},
+                     {file: './taunts/jtron_stop2.mp3',                                 text: 'Stop!'},
+                     {file: './taunts/jtron_stop3.mp3',                                 text: 'Stop!', chance: 10.0}], ["jtron", "stop"]);
+registerTaunt(1041, [{file: './taunts/jtron_wtf.mp3',                                   text: 'WHAT... WHAT THE FUCK?!'}], ["jtron", "what", "wtf"]);
+
+
+registerTaunt(1100, [{file: './taunts/oblivion/law.mp3',                                text: 'Stop! You have violated the law! Pay the court a fine or serve your sentence. Your stolen goods are now forfeit'}], ["oblivion", "law"]);
+
 
 registerTaunt(69690, [{file: './taunts/adult_swim/bird_up.mp3',                         text: 'Bird up!'}], ["birdup"]);
 registerTaunt(69691, [{file: './taunts/adult_swim/bird_up_end.mp3',                     text: '*Bird Up Theme*'},
