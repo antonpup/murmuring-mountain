@@ -648,9 +648,12 @@ registerTaunt(1040, [{file: './taunts/jtron_stop1.mp3',                         
                      {file: './taunts/jtron_stop3.mp3',                                 text: 'Stop!', chance: 10.0}], ["jtron", "stop"]);
 registerTaunt(1041, [{file: './taunts/jtron_wtf.mp3',                                   text: 'WHAT... WHAT THE FUCK?!'}], ["jtron", "what", "wtf"]);
 
-registerTaunt(1050, [{file: './taunts/cc_jwhelp.mp3',                                   text: '--'}], ["cc", "jwhelp", "jwhelp1"]);
-registerTaunt(1051, [{file: './taunts/cc_jwhelp2.mp3',                                  text: '--'}], ["cc", "jwhelp", "jwhelp2"]);
-registerTaunt(1052, [{file: './taunts/cc_jwhelp3.mp3',                                  text: '--'}], ["cc", "jwhelp", "jwhelp3"]);
+registerTaunt(1050, [{file: './taunts/cc_jwhelp.mp3',                                   text: '--'},
+                     {file: './taunts/cc_jwhelp_2.mp3',                                 text: '--'}], ["cc", "jwhelp", "jwhelp1"]);
+registerTaunt(1051, [{file: './taunts/cc_jwhelp2.mp3',                                  text: '--'},
+                     {file: './taunts/cc_jwhelp2_2.mp3',                                text: '--'}], ["cc", "jwhelp", "jwhelp2"]);
+registerTaunt(1052, [{file: './taunts/cc_jwhelp3.mp3',                                  text: '--'},
+                     {file: './taunts/cc_jwhelp3_2.mp3',                                text: '--'}], ["cc", "jwhelp", "jwhelp3"]);
 
 registerTaunt(1100, [{file: './taunts/oblivion/law.mp3',                                text: 'Stop! You have violated the law! Pay the court a fine or serve your sentence. Your stolen goods are now forfeit'}], ["oblivion", "law"]);
 
