@@ -655,6 +655,13 @@ registerTaunt(1051, [{file: './taunts/cc_jwhelp2.mp3',                          
 registerTaunt(1052, [{file: './taunts/cc_jwhelp3.mp3',                                  text: '--'},
                      {file: './taunts/cc_jwhelp3_2.mp3',                                text: '--'}], ["cc", "jwhelp", "jwhelp3"]);
 
+registerTaunt(1060, [{file: './taunts/prison_banned.mp3',                               text: 'Yo I\'m banned from prison dawg. Cops don\'t like being raped back.'}], ["prison", "banned"]);
+registerTaunt(1061, [{file: './taunts/the_fuck.mp3',                                    text: 'The fuck you say to me woman?'}], ["fuck", "woman", "thefuck"]);
+registerTaunt(1062, [{file: './taunts/mofo_dead.mp3',                                   text: 'Yup. That motherfucker is dead.'}], ["mofo", "dead"]);
+registerTaunt(1063, [{file: './taunts/british_cunt.mp3',                                text: 'Oh dear. I seem to have spotted a cunt.'}], ["cunt", "spotted"]);
+registerTaunt(1064, [{file: './taunts/british_going_on.mp3',                            text: 'Excuse me, we\'re British and curious what\'s going on here.'}], ["curious", "british"]);
+registerTaunt(1065, [{file: './taunts/yelling_acid.mp3',                                text: 'I\'m not yelling because I\'m angry. I\'m yelling BECAUSE I\'M ON ACID!'}], ["yelling", "acid"]);
+
 registerTaunt(1100, [{file: './taunts/oblivion/law.mp3',                                text: 'Stop! You have violated the law! Pay the court a fine or serve your sentence. Your stolen goods are now forfeit'}], ["oblivion", "law"]);
 
 
