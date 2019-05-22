@@ -1010,6 +1010,26 @@ ${serverQueue.songs.map(song => `**-** ${song.title}`).join('\n')}
             serverQueue.songs = [];
             serverQueue.connection.dispatcher.end('Stop command has been used!');
         }
+        // Code below doesn't pertain to the music player
+        else if (command === 'flip') {
+            const rngRoll = Math.floor(Math.random());
+            if (rngRoll == 0) {
+                return message.channel.send('You rolled Heads!');
+            }
+            else if (rngRoll == 1) {
+                return message.channel.send('You rolled Tails!');
+            }
+            return message.channel.send('You rolled Something.... How did you? The fuck?!?');
+        } else if (command === 'roll') {
+            if (args.length == 2) {
+                const rollRange = parseInt(args[1]);
+                if (!isNaN(rollRange) && rollRange > 1) {
+                    const rngRoll = Math.floor(Math.random() * rollRange) + 1;
+                    return message.channel.send('You rolled ' + rngRoll);
+                }
+            }
+            return message.channel.send(`Please enter a valid number. Syntax is ${process.env.PLAYER_PREFIX}roll *number*`);
+        }
     }
 
     if (message.content.startsWith(process.env.PREFIX)) {
