@@ -13,7 +13,10 @@ let tauntsQueue = [];
 let previousTaunt = 0;
 const youtube = new YouTube(process.env.GOOGLE_API_KEY);
 const queue = new Map();
-
+const specialCommands = [{command: 'yo', tauntId: 250},
+                         {command: 'ow', tauntId: 251},
+                         {command: 'oi', tauntId: 252},
+                         {command: 'hot', tauntId: 253}];
 
 // Rise of Nations taunts
 registerTaunt(1, [{file: './taunts/ron/yes-3.mp3',                                      text: 'Yes.'}], ['ron', 'yes']);
@@ -828,14 +831,16 @@ function registerTaunt(id, tauntData, tauntTags) {
 
 }
 
-function playTauntAudio(connection) {
+function playTauntAudio(connection, isSilent) {
     return new Promise(resolve => {
         const currentTaunt = tauntsQueue[0];
         const dispatcher = connection.playFile(currentTaunt.file);
         dispatcher.setVolume(0.25);
 
         if (previousTaunt !== currentTaunt.tauntID) {
-            currentTaunt.message.channel.send(currentTaunt.text);
+            if (!isSilent) {
+                currentTaunt.message.channel.send(currentTaunt.text);
+            }
             previousTaunt = currentTaunt.tauntID;
         }
     dispatcher.on('end', end => {
@@ -843,6 +848,17 @@ function playTauntAudio(connection) {
         resolve();
         });
     });
+}
+
+function getExtraSpecialTaunt(command) {
+    for(var i = 0; i < specialCommands.length; i++) {
+        var singleSpecial = specialCommands[i];
+        if (command.startsWith(singleSpecial.command + ' ') || command == singleSpecial.command) {
+            return singleSpecial.tauntId;
+        }
+    }
+
+    return -1;
 }
 
 client.on('warn', console.warn);
@@ -876,11 +892,21 @@ client.on('message', async message => {
     [resetqueue]
     [disconnect]
     [tauntslist]
+
+    Extra special commands that are silent (will not send a text message):
+    yo
+    oi
+    ow
+    hot
     */
 
-    if(!isNaN(parseInt(message.content)) || (message.content.startsWith('[') && message.content.endsWith(']'))) {
+    const specialTauntId = getExtraSpecialTaunt(message.content);
+    if(!isNaN(parseInt(message.content))
+        || (message.content.startsWith('[') && message.content.endsWith(']'))
+        || specialTauntId !== -1) {
         var requestedIDs = [];
         var multipleRequests = [];
+        var isSilent = false;
 
         if (message.content.startsWith('[') && message.content.endsWith(']')) {
             var tagEntries = message.content.slice(1,-1).split(',');
@@ -934,8 +960,11 @@ client.on('message', async message => {
                 }
             }
         }
-        else
-        {
+        else if (specialTauntId != -1) {
+            isSilent = true;
+            requestedIDs.push(specialTauntId);
+        }
+        else {
             multipleRequests = message.content.split(' ');
         }
 
@@ -982,13 +1011,16 @@ client.on('message', async message => {
                 const connection = await voiceChannel.join();
 
                 while (tauntsQueue.length > 0) {
-                    await playTauntAudio(connection);
+                    await playTauntAudio(connection, isSilent);
                 }
 
                 voiceChannel.leave();
                 previousTaunt = 0;
             } else {
-                message.reply('You need to join a voice channel first!');
+                if (!isSilent)
+                {
+                    message.reply('You need to join a voice channel first!');
+                }
                 return undefined;
             }
         }
