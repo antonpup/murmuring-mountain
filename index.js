@@ -1089,7 +1089,7 @@ client.on('message', async message => {
             };
 
             return handleAudioStream(audio, message, voiceChannel);
-        }else if (command === 'skip') {
+        }else if (command === 'skip' || command === 'next') {
             if (!message.member.voiceChannel) {
                 return message.channel.send('You are not in a voice channel!');
             }
@@ -1135,6 +1135,25 @@ __**Song queue:**__
 ${serverQueue.songs.map(song => `**-** ${song.title}`).join('\n')}
 **Now playing:** ${serverQueue.songs[0].title}
 		`);
+        } else if (command === 'shuffle') {
+            if (!serverQueue) {
+                return message.channel.send('There is nothing to shuffle.');
+            }
+
+            // Iterate over the song queue and shuffle them
+            // Source: https://stackoverflow.com/a/12646864
+            for (var i = serverQueue.songs.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                if (j == 0) {
+                    continue;
+                }
+
+                var temp = serverQueue.songs[i];
+                serverQueue.songs[i] = serverQueue.songs[j];
+                serverQueue.songs[j] = temp;
+            }
+
+            return message.channel.send('Shuffled the song queue.');
         } else if (command === 'pause') {
             if (serverQueue && serverQueue.playing) {
                 serverQueue.playing = false;
