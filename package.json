@@ -26,11 +26,11 @@
   },
   "homepage": "https://github.com/antonpup/murmuring-mountain#readme",
   "dependencies": {
-    "discord.js": "^11.4.2",
-    "ffmpeg-binaries": "^3.2.2",
-    "node-opus": "^0.3.1",
+    "discord.js": "^11.5.1",
+    "ffmpeg-binaries": "^4.0.0",
+    "node-opus": "^0.3.3",
     "request": "^2.88.0",
-    "simple-youtube-api": "^3.0.0",
-    "ytdl-core": "^0.29.1"
+    "simple-youtube-api": "^5.2.1",
+    "ytdl-core": "^1.0.7"
   }
 }
