@@ -834,7 +834,7 @@ function registerTaunt(id, tauntData, tauntTags) {
 function playTauntAudio(connection, isSilent) {
     return new Promise(resolve => {
         const currentTaunt = tauntsQueue[0];
-        const dispatcher = connection.playFile(currentTaunt.file);
+        const dispatcher = connection.play(currentTaunt.file);
         dispatcher.setVolume(0.25);
 
         if (previousTaunt !== currentTaunt.tauntID) {
@@ -1320,7 +1320,7 @@ function play(guild, song) {
     let dispatcher = null;
     if(song.rawStream)
     {
-        dispatcher = serverQueue.connection.playStream(song.url)
+        dispatcher = serverQueue.connection.play(song.url)
                 .on('end', reason => {
                 if (reason === 'Stream is not generating quickly enough.') {
             console.log('Stream ended.');
@@ -1334,10 +1334,10 @@ function play(guild, song) {
     }
     else
     {
-        const ytstream = ytdl(song.url, { filter : 'audioonly' });
+        const ytstream = ytdl(song.url, { filter : 'audioonly', highWaterMark: 1<<25 });
         console.log("URL: ");
         console.log(ytstream);
-        dispatcher = serverQueue.connection.playStream(ytstream)
+        dispatcher = serverQueue.connection.play(ytstream)
                 .on('end', reason => {
                 if (reason === 'Stream is not generating quickly enough.') {
             console.log('Song ended.');
